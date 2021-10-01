@@ -58,6 +58,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-cluster-storage-operator
     server: https://kubernetes.default.svc
+  - namespace: openshift-oadp
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
