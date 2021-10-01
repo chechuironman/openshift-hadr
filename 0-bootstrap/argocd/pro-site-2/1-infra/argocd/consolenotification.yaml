@@ -19,7 +19,7 @@ spec:
       values: |
         console-notification:
           consolenotification:
-            text: ROKS-SPLIT-4
+            text: SITE-PRO-2
   syncPolicy:
     automated:
       prune: true
