@@ -35,7 +35,7 @@ resources:
 # IBM Catalogs
 - argocd/operators/ibm-catalogs.yaml
 
-- argocd/operators/oadp-operator.yaml
+# - argocd/operators/oadp-operator.yaml
 
 # Required for IBM MQ
 # - argocd/instances/openldap.yaml
