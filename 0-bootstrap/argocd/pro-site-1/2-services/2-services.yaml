@@ -8,6 +8,7 @@ spec:
   - https://github.com/chechuironman/openshift-hadr
   - https://github.com/chechuironman/roks-services.git
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
+  - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-apps.git
   destinations:
   - namespace: external-secrets
     server: https://kubernetes.default.svc
