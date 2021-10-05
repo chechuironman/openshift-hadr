@@ -9,7 +9,7 @@ resources:
 # - argocd/namespace-istio-system.yaml
 # - argocd/namespace-openldap.yaml
 # - argocd/namespace-sealed-secrets.yaml
-# - argocd/namespace-tools.yaml
+- argocd/namespace-tools.yaml
 - argocd/namespace-openshift-storage.yaml
 - argocd/namespace-openshift-gitops.yaml
 - argocd/namespace-openshift-console.yaml
