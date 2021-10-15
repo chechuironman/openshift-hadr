@@ -22,7 +22,7 @@ spec:
             storageClass: ocs-initial
             sizeOSD: 512Gi
             worker_ip_1: 192.168.6.52
-            worker_ip_2: 192.168.4.47
+            worker_ip_2: 192.168.4.49
             worker_ip_3: 192.168.5.42
             billingType: advanced
             cpaks_enable: enable
