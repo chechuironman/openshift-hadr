@@ -41,7 +41,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: ibm-common-services
     server: https://kubernetes.default.svc  
-  - namespace: openshift-oadp
+  - namespace: openshift-adp
     server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
   # TODO: SCC needs to be moved to 1-infra, here for now for artifactory
