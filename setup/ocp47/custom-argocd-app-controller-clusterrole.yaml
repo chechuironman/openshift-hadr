@@ -264,6 +264,12 @@ rules:
       - secretstores
     verbs:
       - "*"  
+  - apiGroups:
+      - velero.io
+    resources:
+      - restores
+    verbs:
+      - "*" 
 # for one-click to send operand request to ibm-common-services
   - apiGroups:
       - operator.ibm.com
