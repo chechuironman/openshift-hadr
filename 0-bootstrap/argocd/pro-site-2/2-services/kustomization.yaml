@@ -68,5 +68,5 @@ resources:
 #- argocd/instances/openshift-service-mesh-instance.yaml
 
 
-- argocd/instanced/instances/restore-pv-mq.yaml
-# - argocs/mq-manager.yaml
+- argocd/instances/restore-pv-mq.yaml
+# - argocd/instances/mq-manager.yaml
