@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ibm-mq-restore-pv
+  name: velero-backup-mq
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   labels:
@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: services
   source:
-    path: instances/mq-restore
+    path: instances/velero-backup-mq
     repoURL: https://github.com/chechuironman/roks-services
     targetRevision: master
   syncPolicy:

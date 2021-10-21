@@ -69,3 +69,4 @@ resources:
 
 # - argocd/instances/restore-pv-mq.yaml
 # - argocd/instances/mq-manager.yaml
+- argocd/instances/velero-backup-mq.yaml
