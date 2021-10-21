@@ -270,6 +270,18 @@ rules:
       - restores
     verbs:
       - "*" 
+  - apiGroups:
+      - velero.io
+    resources:
+      - schedules
+    verbs:
+      - "*" 
+  - apiGroups:
+      - velero.io
+    resources:
+      - backups
+    verbs:
+      - "*" 
 # for one-click to send operand request to ibm-common-services
   - apiGroups:
       - operator.ibm.com
