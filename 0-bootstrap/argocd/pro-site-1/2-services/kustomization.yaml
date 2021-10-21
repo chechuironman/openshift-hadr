@@ -64,3 +64,8 @@ resources:
 #- argocd/operators/kiali.yaml
 #- argocd/operators/openshift-service-mesh.yaml
 #- argocd/instances/openshift-service-mesh-instance.yaml
+
+
+
+# - argocd/instances/restore-pv-mq.yaml
+# - argocd/instances/mq-manager.yaml
