@@ -102,7 +102,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/pro-site-3/1-infra
+    path: 0-bootstrap/argocd/pro-site-5/1-infra
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: master
   syncPolicy:

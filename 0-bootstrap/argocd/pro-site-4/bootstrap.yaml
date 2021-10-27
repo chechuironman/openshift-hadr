@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-pro-site-3-vmware
+  name: bootstrap-pro-site-4
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/pro-site-3
+    path: 0-bootstrap/argocd/pro-site-4
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: master
   syncPolicy:
