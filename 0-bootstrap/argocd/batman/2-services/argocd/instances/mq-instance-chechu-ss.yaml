@@ -17,11 +17,11 @@ spec:
     targetRevision: master
     helm:
       values: |
-        mq-instance:
-          mq-instance:
+        mq_instance:
+          mq_instance:
             name: chechu-ss
             namespace: cloudpak
-            storage-class: ibm-spectrum-scale-csi-fileset
+            storage_class: ibm-spectrum-scale-csi-fileset
   syncPolicy:
     automated:
       prune: true
