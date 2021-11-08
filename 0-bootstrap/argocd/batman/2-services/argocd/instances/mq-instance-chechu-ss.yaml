@@ -19,7 +19,7 @@ spec:
       values: |
         mq-instance:
           mq_instance:
-            name: chechu-ss
+            name: chechu_ss
             namespace: cloudpak
             storage_class: ibm-spectrum-scale-csi-fileset
   syncPolicy:
