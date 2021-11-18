@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-spiderman
+  name: bootstrap-thor
   namespace: openshift-gitops
 spec:
   destination:
