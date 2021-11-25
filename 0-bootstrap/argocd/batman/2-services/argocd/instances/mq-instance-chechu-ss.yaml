@@ -22,7 +22,7 @@ spec:
             name: testdr
             namespace: namespace: cloudpak
             storage_class: ibm-spectrum-scale-csi-fileset
-            configmap: dr
+            configmap: testdr-cm
             secret: nativehacert
             version: 9.2.3.0-r1
             queuename: batmanqueue
