@@ -20,7 +20,7 @@ spec:
         mq-instance:
           mq_instance:
             name: testdr
-            namespace: namespace: cloudpak
+            namespace: cloudpak
             storage_class: ibm-spectrum-scale-csi-fileset
             configmap: dr
             secret: nativehacert
