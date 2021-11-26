@@ -34,6 +34,7 @@ resources:
 #- argocd/refarch-machinesets.yaml
 #- argocd/storageclass-cp4a.yaml
 
+- argocd/vmware-nodes.yaml
 
 
 
