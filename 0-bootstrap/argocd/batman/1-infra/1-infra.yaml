@@ -64,7 +64,9 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openldap
     server: https://kubernetes.default.svc
-  - namespace: cnsa
+  - namespace: ibm-spectrum-scale
+    server: https://kubernetes.default.svc
+  - namespace: ibm-spectrum-scale-csi 
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""

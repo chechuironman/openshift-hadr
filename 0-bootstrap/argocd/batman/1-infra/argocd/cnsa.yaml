@@ -8,7 +8,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: cnsa
+    namespace: ibm-spectrum-scale
     server: https://kubernetes.default.svc
   project: infra
   source:
