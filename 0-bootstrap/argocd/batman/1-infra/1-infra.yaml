@@ -89,10 +89,14 @@ spec:
     kind: StorageClass
   - group: "machineconfiguration.openshift.io"
     kind: ContainerRuntimeConfig
+  - group: "machineconfiguration.openshift.io"
+    kind: MachineConfig
   - group: "apiextensions.k8s.io"
     kind: CustomResourceDefinition
   - group: "rbac.authorization.k8s.io"
     kind: ClusterRoleBinding
+  - group: "rbac.authorization.k8s.io"
+    kind: ClusterRole
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
