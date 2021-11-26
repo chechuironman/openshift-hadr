@@ -301,3 +301,18 @@ rules:
       - operandrequests/status
     verbs:
       - get      
+  - apiGroups:
+      - machineconfiguration.openshift.io
+    resources:
+      - containerruntimeconfigs
+      - machineconfigs
+    verbs:
+      - "*"
+  - apiGroups:
+      - scale.spectrum.ibm.com"
+    resources:
+      - remoteclusters
+      - filesystems
+      - Cluster
+    verbs:
+      - "*" 
