@@ -34,7 +34,7 @@ resources:
 #- argocd/refarch-machinesets.yaml
 #- argocd/storageclass-cp4a.yaml
 
-- argocd/cnsa.yaml
+# - argocd/cnsa.yaml
 
 
 
