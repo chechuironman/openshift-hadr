@@ -28,6 +28,7 @@ spec:
             ip_1: 70.85.40.4
             ip_2: 70.85.40.5
             ip_3: 70.85.40.6
+            cluster_id: 385763033470755166
   syncPolicy:
     automated:
       prune: true
