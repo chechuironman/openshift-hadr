@@ -43,6 +43,7 @@ resources:
 # - argocd/operators/cert-manager.yaml
 # - argocd/instances/cert-manager-instance.yaml
 - argocd/instances/mq-instance-chechu-ss.yaml
+- argocd/instances/mq-instance-chechu-ss-2.yaml
 # # Sealed Secrets
 # - argocd/operators/sealed-secrets.yaml
 # - argocd/instances/sealed-secrets-instance.yaml
