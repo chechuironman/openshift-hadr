@@ -45,3 +45,5 @@ This guide divides in 4 parts:
 - [Deploy the Observability tools](./deploy-observability.mdx)
 - [Establish Security Perimeter](./establish-security-perimeter.mdx)# ocp-ipi-infra
 # ocp-ipi-infra
+
+
