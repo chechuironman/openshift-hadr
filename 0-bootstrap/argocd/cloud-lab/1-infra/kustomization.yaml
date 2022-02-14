@@ -33,6 +33,8 @@ resources:
 # - argocd/router-default-pro.yaml
 - argocd/machinesets.yaml
 #- argocd/storageclass-cp4a.yaml
+- argocd/storage.yaml
+
 
 
 
