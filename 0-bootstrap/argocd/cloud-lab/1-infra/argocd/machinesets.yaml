@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: cloud-lab
+          infrastructureId: cloud-lab-5pqwg
           cloudProvider:
             name: vsphere 
             managed: false
