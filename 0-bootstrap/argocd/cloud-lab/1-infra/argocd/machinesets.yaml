@@ -28,6 +28,7 @@ spec:
             datastore: SL02SL307608-29-ONTAP1
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
+            folder: cloud-lab
             zones:
               - 1
             infraNodes:
