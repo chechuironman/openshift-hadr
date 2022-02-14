@@ -13,7 +13,7 @@ spec:
   project: infra
   source:
     path: machinesets
-    repoURL: https://github.com/chechuironman/roks-infra
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
     helm:
       values: |
