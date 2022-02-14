@@ -14,7 +14,7 @@ spec:
   source:
     path: machinesets
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
-    targetRevision: master
+    targetRevision: main
     helm:
       values: |
         refarch-machinesets:
