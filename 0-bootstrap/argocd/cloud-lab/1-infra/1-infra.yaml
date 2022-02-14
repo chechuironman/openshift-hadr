@@ -85,7 +85,6 @@ spec:
     kind: StorageClass
   - group: "machineconfiguration.openshift.io"
     kind: "MachineConfigPool"
-:MachineConfigPoo
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
