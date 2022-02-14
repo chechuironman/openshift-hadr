@@ -12,7 +12,7 @@ resources:
 # - argocd/namespace-tools.yaml
 # - argocd/namespace-openshift-storage.yaml
 - argocd/namespace-openshift-gitops.yaml
-# - argocd/namespace-openshift-console.yaml
+- argocd/namespace-openshift-console.yaml
 - argocd/namespace-openshift-console-operator.yaml
 - argocd/namespace-openshift-marketplace.yaml
 - argocd/namespace-openshift-operators.yaml
@@ -31,7 +31,7 @@ resources:
 # - argocd/odf-ibm.yaml
 # - argocd/refarch-infraconfig.yaml
 # - argocd/router-default-pro.yaml
-#- argocd/refarch-machinesets.yaml
+- argocd/refarch-machinesets.yaml
 #- argocd/storageclass-cp4a.yaml
 
 

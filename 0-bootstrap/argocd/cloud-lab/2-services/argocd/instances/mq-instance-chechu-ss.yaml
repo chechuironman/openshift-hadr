@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mq-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: cloudpak
+    server: https://kubernetes.default.svc
+  project: services
+  source:
+    path: instances/mq-instance
+    repoURL: https://github.com/chechuironman/roks-services.git
+    targetRevision: master
+    helm:
+      values: |
+        mq-instance:
+          mq_instance:
+            name: testdr
+            namespace: cloudpak
+            storage_class: ibm-spectrum-scale-csi-fileset
+            configmap: testdr-cm
+            secret: nativehacert
+            version: 9.2.3.0-r1
+            queuename: batmanqueue
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

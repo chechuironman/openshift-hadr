@@ -1,0 +1,77 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: machinesets
+    repoURL: https://github.com/chechuironman/roks-infra
+    targetRevision: master
+    helm:
+      values: |
+        refarch-machinesets:
+          infrastructureId: cloud-lab
+          vsphere:
+            networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
+            datacenter: Dallas10
+            datastore: SL02SL307608-29-ONTAP1
+            cluster: DAL10 Compute Cluster
+            server: vcsa.vmware.chechu.com
+            zones:
+              - 1
+            infraNodes:
+              nodeCount: 1
+              diskGiB: 100
+              memoryMiB:  16000
+              numCPUs: 4
+              numCoresPerSocket: 4
+            storageNodes:
+              nodeCount: 1
+              diskGiB: 100
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
+            cloudpakNodes:
+              nodeCount: 1
+              diskGiB: 100
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
+
+
+
+
+            region: us-east-1
+            zones:
+            - us-east-1a
+            - us-east-1b
+            - us-east-1c
+            image: ami-01ea0772949cb189a
+            infraNodes:
+              nodeCount: 1
+              volumeSize: 120
+              volumeType: gp2
+              instanceType: m5.xlarge
+            storageNodes:
+              nodeCount: 1
+              volumeSize: 120
+              volumeType: gp2
+              instanceType: m5.4xlarge
+            cloudpakNodes:
+              nodeCount: 0
+              volumeSize: 120
+              volumeType: gp2
+              instanceType: m5.xlarge
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
