@@ -43,4 +43,4 @@ This guide divides in 4 parts:
 - [Deploy the cluster. 4 Topologies recommended](./deploy-roks.mdx)
 - [Deploy the GitOps strategy](./deploy-gitops.mdx)
 - [Deploy the Observability tools](./deploy-observability.mdx)
-- [Establish Security Perimeter](./establish-security-perimeter.mdx)
+- [Establish Security Perimeter](./establish-security-perimeter.mdx)# ocp-ipi-infra
