@@ -32,11 +32,11 @@ spec:
             zones:
               - 1
             infraNodes:
-              nodeCount: 0
+              nodeCount: 3
               diskGiB: 100
-              memoryMiB:  16000
-              numCPUs: 4
-              numCoresPerSocket: 4
+              memoryMiB:  32768
+              numCPUs: 16
+              numCoresPerSocket: 16
             storageNodes:
               nodeCount: 3
               diskGiB: 1000
