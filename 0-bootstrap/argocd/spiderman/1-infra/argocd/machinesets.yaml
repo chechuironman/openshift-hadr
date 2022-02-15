@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: spiderman-xkj8d
+          infrastructureId: cloud-lab-5pqwg
           cloudProvider:
             name: vsphere 
             managed: false
@@ -28,15 +28,15 @@ spec:
             datastore: SL02SL307608-29-ONTAP1
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
-            folder: spiderman
+            folder: cloud-lab
             zones:
               - 1
             infraNodes:
-              nodeCount: 3
+              nodeCount: 0
               diskGiB: 100
-              memoryMiB:  32768
-              numCPUs:16
-              numCoresPerSocket: 16
+              memoryMiB:  16000
+              numCPUs: 4
+              numCoresPerSocket: 4
             storageNodes:
               nodeCount: 3
               diskGiB: 1000
@@ -44,11 +44,11 @@ spec:
               numCPUs: 32
               numCoresPerSocket: 32
             cloudpakNodes:
-              nodeCount: 3
+              nodeCount: 0
               diskGiB: 100
-              memoryMiB: 32768
-              numCPUs: 8
-              numCoresPerSocket: 8
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
   syncPolicy:
     automated:
       prune: true
