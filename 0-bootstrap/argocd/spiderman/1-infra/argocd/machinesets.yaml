@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: cloud-lab-5pqwg
+          infrastructureId: spiderman-2xm7q
           cloudProvider:
             name: vsphere 
             managed: false
@@ -28,7 +28,7 @@ spec:
             datastore: SL02SL307608-29-ONTAP1
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
-            folder: cloud-lab
+            folder: spiderman
             zones:
               - 1
             infraNodes:
