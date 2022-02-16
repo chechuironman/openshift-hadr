@@ -14,6 +14,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra.git
     path: storage
     helm:
       values: |
