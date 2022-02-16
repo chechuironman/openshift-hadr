@@ -22,7 +22,7 @@ spec:
         odf-operator:
           channel: stable-4.9
           sizeGiB: 512
-          storageClass: odf
+          storageClass: thin
           argo:
             namespace: openshift-gitops
             serviceAccount: openshift-gitops-argocd-application-controller
