@@ -334,5 +334,6 @@ rules:
       - ocs.openshift.io
     resources:
       - storageclusters
+      - storagesystem
     verbs:
       - "*" 
