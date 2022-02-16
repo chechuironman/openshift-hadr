@@ -19,7 +19,7 @@ spec:
     targetRevision: master
     helm:
       values: |
-        odf-operator:
+        odf-operator-native:
           channel: stable-4.9
           sizeGiB: 512
           storageClass: thin
