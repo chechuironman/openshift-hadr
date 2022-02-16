@@ -294,6 +294,12 @@ rules:
       - tuneds
     verbs:
       - "*"
+  - apiGroups:
+      - storageclusters.ocs.openshift.io
+    resources:
+      - storageclusters
+    verbs:
+      - "*"
   
 # for one-click to send operand request to ibm-common-services
   - apiGroups:
