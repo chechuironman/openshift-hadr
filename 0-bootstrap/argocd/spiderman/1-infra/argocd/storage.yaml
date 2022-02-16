@@ -15,7 +15,7 @@ spec:
   project: infra
   source:
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
-    path: storage
+    path: odf-operator
     targetRevision: master
     helm:
       values: |
