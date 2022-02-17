@@ -35,7 +35,7 @@ spec:
               nodeCount: 3
               diskGiB: 100
               memoryMiB:  32768
-              numCPUs:16
+              numCPUs: 16
               numCoresPerSocket: 16
             storageNodes:
               nodeCount: 3
@@ -44,11 +44,11 @@ spec:
               numCPUs: 32
               numCoresPerSocket: 32
             cloudpakNodes:
-              nodeCount: 3
+              nodeCount: 0
               diskGiB: 100
-              memoryMiB: 32768
-              numCPUs: 8
-              numCoresPerSocket: 8
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
   syncPolicy:
     automated:
       prune: true
