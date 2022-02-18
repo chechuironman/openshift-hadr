@@ -10,7 +10,7 @@ resources:
 # - argocd/namespace-openldap.yaml
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
-# - argocd/namespace-openshift-storage.yaml
+- argocd/namespace-openshift-storage.yaml
 - argocd/namespace-openshift-gitops.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
@@ -32,7 +32,7 @@ resources:
 # - argocd/refarch-infraconfig.yaml
 # - argocd/router-default-pro.yaml
 - argocd/machinesets.yaml
-# - argocd/storage.yaml
+- argocd/storage.yaml
 #- argocd/storageclass-cp4a.yaml
 
 
