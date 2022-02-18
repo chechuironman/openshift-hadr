@@ -24,8 +24,8 @@ resources:
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
 - argocd/namespace-image-registry.yaml
-- argocd/namespace-ingress.yaml
-- argocd/namespace-network-diagnostic.yaml
+- argocd/namespace-openshift-ingress.yaml
+- argocd/namespace-openshift-network-diagnostic.yaml
 # - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
