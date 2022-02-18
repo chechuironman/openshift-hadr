@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-openshift-gitops
+    namespace: openshift-network-diagnostic
     server: https://kubernetes.default.svc
   project: infra
   source:

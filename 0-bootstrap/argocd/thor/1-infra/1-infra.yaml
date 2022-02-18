@@ -70,6 +70,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-operator-lifecycle-manager
     server: https://kubernetes.default.svc
+  - namespace: openshift-network-diagnostic
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
