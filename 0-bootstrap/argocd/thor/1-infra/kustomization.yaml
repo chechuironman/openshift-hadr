@@ -16,7 +16,7 @@ resources:
 # - argocd/namespace-openshift-console-operator.yaml
 - argocd/namespace-openshift-marketplace.yaml
 - argocd/namespace-openshift-monitoring.yaml
-- argocd/openshift-operator-lifecycle-manager.yaml
+- argocd/namespace-openshift-operator-lifecycle-manager.yaml
 # - argocd/namespace-openshift-operators.yaml
 # - argocd/namespace-openshift-pipelines.yaml
 # - argocd/namespace-ibm-foundations.yaml
