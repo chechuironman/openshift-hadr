@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: spiderman-2xm7q
+          infrastructureId: spiderman-c9lxs
           cloudProvider:
             name: vsphere 
             managed: false
