@@ -36,7 +36,7 @@ resources:
 # - argocd/refarch-infraconfig.yaml
 # - argocd/router-default-pro.yaml
 - argocd/machinesets.yaml
-# - argocd/storage.yaml
+- argocd/storage.yaml
 
 
 
