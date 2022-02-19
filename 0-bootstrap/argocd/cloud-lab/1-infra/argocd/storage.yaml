@@ -14,16 +14,19 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: storage
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    path: odf-operator
+    targetRevision: master
     helm:
       values: |
-        odf-operator:
+        odf-operator-native:
           channel: stable-4.9
           sizeGiB: 512
-          storageClass: odf
+          storageClass: thin
+          csv: odf-operator.v4.9.2
           argo:
             namespace: openshift-gitops
-            serviceAccount: openshift-gitops-cntk-argocd-application-controller
+            serviceAccount: openshift-gitops-argocd-application-controller
   syncPolicy:
     automated:
       prune: true
