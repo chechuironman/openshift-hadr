@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: thor-v59gk
+          infrastructureId: thor-mqjgm
           cloudProvider:
             name: vsphere 
             managed: false
