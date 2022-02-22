@@ -18,14 +18,14 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: spiderman-c9lxs
+          infrastructureId: spiderman-drptv
           cloudProvider:
             name: vsphere 
             managed: false
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
-            datastore: SL02SL307608-29-ONTAP1
+            datastore: SL02SEL307608-20
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
             folder: spiderman
