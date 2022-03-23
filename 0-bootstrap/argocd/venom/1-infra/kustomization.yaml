@@ -15,13 +15,13 @@ resources:
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
 - argocd/namespace-openshift-marketplace.yaml
-- argocd/namespace-openshift-operators.yaml
+# - argocd/namespace-openshift-operators.yaml
 - argocd/namespace-openshift-pipelines.yaml
 - argocd/namespace-ibm-foundations.yaml
 - argocd/namespace-kube-system.yaml
 - argocd/namespace-calico-system.yaml
 - argocd/namespace-openshift-cluster-storage-operator.yaml
-- argocd/namespace-image-registry.yaml
+# - argocd/namespace-image-registry.yaml
 # - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
