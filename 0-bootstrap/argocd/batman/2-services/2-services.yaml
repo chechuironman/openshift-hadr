@@ -7,6 +7,7 @@ spec:
   sourceRepos:
   - https://github.com/chechuironman/openshift-hadr
   - https://github.com/chechuironman/roks-services.git
+  - https://github.com/chechuironman/ocp-IPI-services
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
   destinations:
   - namespace: external-secrets
