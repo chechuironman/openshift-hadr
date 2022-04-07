@@ -16,7 +16,7 @@ spec:
   source:
     path: operators/ibm-db2-operator
     repoURL: https://github.com/chechuironman/ocp-IPI-services
-    targetRevision: master    
+    targetRevision: main    
   syncPolicy:
     automated:
       prune: true
