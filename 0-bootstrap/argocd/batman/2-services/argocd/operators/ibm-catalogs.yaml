@@ -41,7 +41,18 @@ spec:
                 image: docker.io/ibmcom/ibm-operator-catalog
                 updateStrategy:
                   registryPoll:
-                    interval: 45m          
+                    interval: 45m   
+
+            db2u-operator:
+              name: ibm-db2uoperator-catalog
+              catalog
+                sourceType: grpc
+                image: docker.io/ibmcom/ibm-db2uoperator-catalog:latest
+                displayName: IBM Db2U Catalog
+                publisher: IBM
+                updateStrategy:
+                  registryPoll:
+                    interval: 45m       
   syncPolicy:
     automated:
       prune: true
