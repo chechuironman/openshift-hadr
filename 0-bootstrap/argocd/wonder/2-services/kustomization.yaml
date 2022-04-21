@@ -35,6 +35,9 @@ resources:
 # IBM Catalogs
 - argocd/operators/ibm-catalogs.yaml
 
+# IBM fusion
+- argocd/operators/ibm-fusion.yaml
+
 # - argocd/operators/oadp-operator.yaml
 
 # Required for IBM MQ
