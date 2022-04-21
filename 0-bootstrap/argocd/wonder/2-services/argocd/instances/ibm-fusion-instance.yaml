@@ -14,7 +14,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: operators/ibm-fusion-instance
+    path: instances/ibm-fusion-instance
     repoURL: https://github.com/chechuironman/ocp-IPI-services
     targetRevision: main
     helm:
