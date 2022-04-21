@@ -350,3 +350,9 @@ rules:
       - spectrumfusions
     verbs:
       - "*" 
+  - apiGroups:
+      - cns.isf.ibm.com
+    resources:
+      - scaleclusters
+    verbs:
+      - "*" 
