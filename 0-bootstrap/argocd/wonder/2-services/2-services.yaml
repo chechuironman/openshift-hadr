@@ -43,6 +43,16 @@ spec:
     server: https://kubernetes.default.svc  
   - namespace: openshift-oadp
     server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-fusion-ns
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-protect-plus-ns
+    server: https://kubernetes.default.svc     
+  - namespace: ibm-spectrum-scale
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-csi
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-operator
+    server: https://kubernetes.default.svc  
   clusterResourceWhitelist:
   # TODO: SCC needs to be moved to 1-infra, here for now for artifactory
   - group: "security.openshift.io"
