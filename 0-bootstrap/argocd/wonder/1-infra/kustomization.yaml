@@ -31,8 +31,8 @@ resources:
 # - argocd/odf-ibm.yaml
 # - argocd/refarch-infraconfig.yaml
 # - argocd/router-default-pro.yaml
-- argocd/machinesets.yaml
-- argocd/storage.yaml
+# - argocd/machinesets.yaml
+# - argocd/storage.yaml
 #- argocd/storageclass-cp4a.yaml
 
 
