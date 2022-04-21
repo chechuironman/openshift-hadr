@@ -108,7 +108,7 @@ spec:
   source:
     path: 0-bootstrap/argocd/wonder/2-services
     repoURL: https://github.com/chechuironman/openshift-hadr
-    targetRevision: main
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true
