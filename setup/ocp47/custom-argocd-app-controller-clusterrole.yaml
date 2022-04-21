@@ -344,3 +344,9 @@ rules:
       - storagesystems
     verbs:
       - "*" 
+  - apiGroups:
+      - prereq.isf.ibm.com
+    resources:
+      - spectrumfusions
+    verbs:
+      - "*" 
