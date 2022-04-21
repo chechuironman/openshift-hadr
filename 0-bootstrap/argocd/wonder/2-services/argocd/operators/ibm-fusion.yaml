@@ -19,7 +19,7 @@ spec:
     targetRevision: main
     helm:
       values: |
-        fusion: 
+        fusion_values: 
           fusion:
             remotecluster_id: 13885685619589396361
             node_fqdn_1: spectrum-scale-fra-1
