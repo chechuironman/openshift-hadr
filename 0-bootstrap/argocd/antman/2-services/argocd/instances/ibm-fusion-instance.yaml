@@ -1,0 +1,35 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ibm-fusion-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "210"
+  labels:
+    gitops.tier.group: ibm-cloudpak
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-operators
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: instances/ibm-fusion-instance
+    repoURL: https://github.com/chechuironman/ocp-IPI-services
+    targetRevision: main
+    helm:
+      values: |
+        ibm-fusion-instance:
+          fusion:
+            remotecluster_id: "13885685619589396361"
+            node_fqdn_1: spectrum-scale-fra-1
+            node_ip_1: 192.168.1.4
+            node_fqdn_2: spectrum-scale-fra-2
+            node_ip_2: 192.168.2.4
+            storageclass_fusion: fusion-scale
+            storageclass: ibmc-vpc-block-10iops-tier
+            filesystem: fs0           
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
