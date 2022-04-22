@@ -21,7 +21,7 @@ spec:
       values: |
         ibm-fusion-instance:
           fusion:
-            remotecluster_id: 13885685619589396361
+            remotecluster_id: "13885685619589396361"
             node_fqdn_1: spectrum-scale-fra-1
             node_ip_1: 192.168.1.4
             node_fqdn_2: spectrum-scale-fra-2
