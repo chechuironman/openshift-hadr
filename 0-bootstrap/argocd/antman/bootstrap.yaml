@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-wonder
+  name: bootstrap-antman
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/wonder
+    path: 0-bootstrap/argocd/antman
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: master
   syncPolicy:
