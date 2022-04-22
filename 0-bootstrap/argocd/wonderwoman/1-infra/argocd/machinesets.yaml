@@ -1,0 +1,56 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: machinesets
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    targetRevision: master
+    helm:
+      values: |
+        machinesets:
+          infrastructureId: spiderman-n6hbj
+          cloudProvider:
+            name: vsphere 
+            managed: false
+          vsphere:
+            networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
+            datacenter: Dallas10
+            datastore: SL02SEL307608-20
+            cluster: DAL10 Compute Cluster
+            server: vcsa.vmware.chechu.com
+            folder: spiderman
+            zones:
+              - 1
+            infraNodes:
+              nodeCount: 3
+              diskGiB: 100
+              memoryMiB:  32768
+              numCPUs: 16
+              numCoresPerSocket: 16
+            storageNodes:
+              nodeCount: 3
+              diskGiB: 1000
+              memoryMiB: 65536
+              numCPUs: 32
+              numCoresPerSocket: 32
+            cloudpakNodes:
+              nodeCount: 0
+              diskGiB: 100
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+

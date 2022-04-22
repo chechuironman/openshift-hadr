@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bootstrap-wonderwoman
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: 0-bootstrap/argocd/wonder
+    repoURL: https://github.com/chechuironman/openshift-hadr
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
