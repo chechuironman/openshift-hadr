@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: thor-z26bv
+          infrastructureId: thor-s42pm
           cloudProvider:
             name: vsphere 
             managed: false
