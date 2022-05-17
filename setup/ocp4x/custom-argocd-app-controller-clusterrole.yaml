@@ -39,6 +39,7 @@ rules:
       - 'route.openshift.io'
     resources:
       - routes
+      - routes/custom-host
   - verbs:
       - '*'
     apiGroups:
@@ -237,6 +238,12 @@ rules:
       - ocs.openshift.io
     resources:
       - storageclusters
+  - apiGroups:
+      - odf.openshift.io
+    resources:
+      - storagesystems
+    verbs:
+      - '*'
   - verbs:
       - '*'
     apiGroups:
@@ -314,6 +321,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - eventstreams.ibm.com
+    resources:
+      - '*'
+  - verbs:
+      - '*'
+    apiGroups:
       - isc.ibm.com
     resources:
       - cp4sthreatmanagements
@@ -347,3 +360,33 @@ rules:
       - wkc.cpd.ibm.com
     resources:
       - wkc
+  - verbs:
+      - '*'
+    apiGroups:
+      - ds.cpd.ibm.com
+    resources:
+      - datastages
+  - verbs:
+      - '*'
+    apiGroups:
+      - ae.cpd.ibm.com
+    resources:
+      - analyticsengines
+  - verbs:
+      - '*'
+    apiGroups:
+      - policy
+    resources:
+      - podsecuritypolicies
+  - verbs:
+      - '*'
+    apiGroups:
+      - monitoring.coreos.com
+    resources:
+      - servicemonitors
+  - verbs:
+      - '*'
+    apiGroups:
+      - operator.knative.dev
+    resources:
+      - knativeservings

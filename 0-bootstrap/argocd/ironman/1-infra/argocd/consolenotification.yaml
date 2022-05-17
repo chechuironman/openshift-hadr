@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cntk-consolenotification
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: consolenotification
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra.git
+    targetRevision: master
+    helm:
+      values: |
+        console-notification:
+          consolenotification:
+            text: WONDERWOMAN
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

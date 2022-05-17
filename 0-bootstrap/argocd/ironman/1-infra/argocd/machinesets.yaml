@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: machinesets
+    helm:
+      values: |
+        refarch-machinesets:
+          infrastructureId: "ironman-5jyds"
+          # cloudProvider.name set to aws, azure, ibmcloud or vsphere
+          # cloudProvider.managed set to true for ROSA, ARO, ROKS
+          cloudProvider:
+            name: "ibmcloud 
+            managed: false
+          # only for "aws", "ibmcloud" or "azure" maybe "gcp"
+          cloud:
+            region: eu-gb
+            image: ironman-5jyds-rhcos
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
