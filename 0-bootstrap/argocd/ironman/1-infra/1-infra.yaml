@@ -74,6 +74,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-network-diagnostics
     server: https://kubernetes.default.svc
+  - namespace: openshift-cluster-csi-drivers
+    server: https://kubernetes.default.svc
   - namespace: ibm-spectrum-fusion-ns
     server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
