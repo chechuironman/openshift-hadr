@@ -15,7 +15,7 @@ spec:
   project: infra
   source:
     path: machinesets
-    repoURL: https://github.com/chechuironman/openshift-hadr
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra.git
     targetRevision: master
     helm:
       values: |
