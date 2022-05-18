@@ -15,6 +15,8 @@ spec:
   project: infra
   source:
     path: machinesets
+    repoURL: https://github.com/chechuironman/openshift-hadr
+    targetRevision: master
     helm:
       values: |
         refarch-machinesets:
