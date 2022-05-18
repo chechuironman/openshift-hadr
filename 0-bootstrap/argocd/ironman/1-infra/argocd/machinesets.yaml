@@ -24,7 +24,7 @@ spec:
           # cloudProvider.name set to aws, azure, ibmcloud or vsphere
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
-            name: "ibmcloud 
+            name: "ibmcloud"
           # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
             region: eu-gb
