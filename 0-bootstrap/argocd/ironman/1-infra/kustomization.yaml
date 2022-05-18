@@ -13,6 +13,7 @@ resources:
 # - argocd/namespace-openshift-storage.yaml
 - argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
+- argocd/namespace-openshift-ingress.yaml
 # - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
@@ -23,7 +24,7 @@ resources:
 # - argocd/namespace-kube-system.yaml
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
-# - argocd/namespace-image-registry.yaml
+- argocd/namespace-image-registry.yaml
 # - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
