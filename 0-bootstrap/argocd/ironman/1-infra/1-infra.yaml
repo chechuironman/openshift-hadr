@@ -70,6 +70,10 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-operator-lifecycle-manager
     server: https://kubernetes.default.svc
+  - namespace: openshift-multus
+    server: https://kubernetes.default.svc
+  - namespace: openshift-network-diagnostics
+    server: https://kubernetes.default.svc
   - namespace: ibm-spectrum-fusion-ns
     server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
