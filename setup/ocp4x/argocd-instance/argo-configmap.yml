@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-git-override
+data:
+  map.yaml: |-
+    map:
+    - upstreamRepoURL: github.com/chechuironman/openshift-hadr
+      originRepoUrL: github.com/chechuironman/openshift-hadr
+      originBranch: master
+    - upstreamRepoURL: github.com/chechuironman/ocp-IPI-infra
+      originRepoUrL: github.com/chechuironman/ocp-IPI-infra
+      originBranch: master
+    - upstreamRepoURL: github.com/chechuironman/ocp-IPI-services
+      originRepoUrL: github.com/chechuironman/ocp-IPI-services
+      originBranch: master
+    - upstreamRepoURL: github.com/chechuironman/ocp-IPI-apps
+      originRepoUrL: github.com/chechuironman/ocp-IPI-apps
+      originBranch: master

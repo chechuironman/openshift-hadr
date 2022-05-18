@@ -1,0 +1,11 @@
+spec:
+  resourceCustomizations: |
+    argoproj.io/Application:
+      ignoreDifferences: |
+        jsonPointers:
+        - /spec/source/targetRevision
+        - /spec/source/repoURL
+    argoproj.io/AppProject:
+      ignoreDifferences: |
+        jsonPointers:
+        - /spec/sourceRepos
