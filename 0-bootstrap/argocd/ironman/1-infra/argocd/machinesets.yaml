@@ -25,11 +25,9 @@ spec:
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
             name: "ibmcloud 
-            managed: false
           # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
             region: eu-gb
-            image: ironman-5jyds-rhcos
   syncPolicy:
     automated:
       prune: true
