@@ -17,7 +17,7 @@ resources:
 # - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
-# - argocd/namespace-openshift-marketplace.yaml
+- argocd/namespace-openshift-marketplace.yaml
 - argocd/namespace-openshift-operators.yaml
 - argocd/namespace-openshift-multus.yaml
 - argocd/namespace-openshift-network-diagnostics.yaml
