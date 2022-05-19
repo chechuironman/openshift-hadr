@@ -121,7 +121,7 @@ spec:
   project: default
   source:
     path: 0-bootstrap/argocd/ironman/1-infra
-    repoURL: https://github.com/chechuironman/openshift-hadr
+    repoURL: https://github.com/antman/openshift-hadr
     targetRevision: master
   syncPolicy:
     automated:
