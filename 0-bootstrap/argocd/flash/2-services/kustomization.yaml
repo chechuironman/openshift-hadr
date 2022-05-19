@@ -73,4 +73,4 @@ resources:
 
 # RHACM
 - argocd/operators/rhacm-hub-operator.yaml
-- argocd/operators/rhacm-hub-instance.yaml
+- argocd/instances/rhacm-hub-instance.yaml
