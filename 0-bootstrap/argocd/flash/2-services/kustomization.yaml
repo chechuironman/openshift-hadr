@@ -72,4 +72,4 @@ resources:
 #- argocd/instances/openshift-service-mesh-instance.yaml
 
 # RHACM
-argocd/operators/rhacm-hub-operator.yaml
+- argocd/operators/rhacm-hub-operator.yaml
