@@ -390,3 +390,9 @@ rules:
       - operator.knative.dev
     resources:
       - knativeservings
+  - verbs:
+      - '*'
+    apiGroups:
+      - operator.open-cluster-management.io 
+    resources:
+      - multiclusterhubs
