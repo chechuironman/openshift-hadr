@@ -120,8 +120,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/antman/1-infra
-    repoURL: https://github.com/chechuironman/openshift-hadr
+    path: 0-bootstrap/argocd/flash/1-infra
+    repoURL: https://github.com/antman/openshift-hadr
     targetRevision: master
   syncPolicy:
     automated:

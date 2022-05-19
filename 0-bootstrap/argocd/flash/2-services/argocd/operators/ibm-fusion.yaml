@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ibm-fusion
+  annotations:
+    argocd.argoproj.io/sync-wave: "210"
+  labels:
+    gitops.tier.group: ibm-cloudpak
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-operators
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: operators/ibm-fusion
+    repoURL: https://github.com/chechuironman/ocp-IPI-services
+    targetRevision: main
+    helm:
+      values: |
+        fusion_values: 
+          fusion:        
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
