@@ -68,6 +68,14 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-cluster-node-tuning-operator
     server: https://kubernetes.default.svc
+  - namespace: openshift-operator-lifecycle-manager
+    server: https://kubernetes.default.svc
+  - namespace: openshift-multus
+    server: https://kubernetes.default.svc
+  - namespace: openshift-network-diagnostics
+    server: https://kubernetes.default.svc
+  - namespace: openshift-cluster-csi-drivers
+    server: https://kubernetes.default.svc
   - namespace: ibm-spectrum-fusion-ns
     server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
@@ -112,7 +120,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/antman/1-infra
+    path: 0-bootstrap/argocd/ironman/1-infra
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: master
   syncPolicy:

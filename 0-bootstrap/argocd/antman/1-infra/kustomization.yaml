@@ -10,13 +10,19 @@ resources:
 # - argocd/namespace-openldap.yaml
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
-# - argocd/namespace-openshift-storage.yaml
-# - argocd/namespace-openshift-gitops.yaml
-- argocd/namespace-ibm-spectrum-fusion-ns.yaml
+- argocd/namespace-openshift-storage.yaml
+# - argocd/namespace-openshift-monitoring.yaml
+- argocd/namespace-openshift-gitops.yaml
+# - argocd/namespace-openshift-ingress.yaml
+# - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
 # - argocd/namespace-openshift-marketplace.yaml
 # - argocd/namespace-openshift-operators.yaml
+# - argocd/namespace-openshift-multus.yaml
+# - argocd/namespace-openshift-network-diagnostics.yaml
+# - argocd/namespace-openshift-operator-lifecycle-manager.yaml
+# - argocd/namespace-openshift-cluster-csi-drivers.yaml
 # - argocd/namespace-openshift-pipelines.yaml
 # - argocd/namespace-ibm-foundations.yaml
 # - argocd/namespace-kube-system.yaml
@@ -32,8 +38,8 @@ resources:
 # - argocd/odf-ibm.yaml
 # - argocd/refarch-infraconfig.yaml
 # - argocd/router-default-pro.yaml
-# - argocd/machinesets.yaml
-# - argocd/storage.yaml
+- argocd/machinesets.yaml
+- argocd/storage.yaml
 #- argocd/storageclass-cp4a.yaml
 
 
