@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rhacm-hub-operator
+  annotations:
+    argocd.argoproj.io/sync-wave: "210"
+  labels:
+    gitops.tier.group: rhacm-hub
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: operators/rhacm-hub-operator
+    repoURL: https://github.com/chechuironman/ocp-IPI-services
+    targetRevision: master
+    helm:
+      values: |
+        rhacm-hub-operator:
+          namespace: multicluster-hub
+          channel: release-2.4      
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

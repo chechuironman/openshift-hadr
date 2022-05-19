@@ -70,3 +70,6 @@ resources:
 #- argocd/operators/kiali.yaml
 #- argocd/operators/openshift-service-mesh.yaml
 #- argocd/instances/openshift-service-mesh-instance.yaml
+
+# RHACM
+argocd/operators/rhacm-hub-operator.yaml
