@@ -26,7 +26,7 @@ spec:
           cloud:
             region: eu-de
             cloudpakNodes:
-              nodeCount: 3
+              nodeCount: 1
   syncPolicy:
     automated:
       prune: true
