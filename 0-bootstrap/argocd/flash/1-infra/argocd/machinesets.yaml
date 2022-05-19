@@ -24,7 +24,7 @@ spec:
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: eu-de
+            region: eu-gb
             cloudpakNodes:
               nodeCount: 1
   syncPolicy:
