@@ -19,9 +19,8 @@ spec:
     targetRevision: master
     helm:
       values: |
-        rhacm-hub-operator:
-          namespace: multicluster-hub
-          channel: release-2.4      
+        rhacm-hub-instance:
+          namespace: multicluster-hub    
   syncPolicy:
     automated:
       prune: true
