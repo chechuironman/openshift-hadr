@@ -22,7 +22,7 @@ spec:
         odf-operator:
           channel: stable-4.10
           sizeGiB: 512
-          storageClass: thin
+          storageClass: ibmc-vpc-block-10iops-tier
           csv: odf-operator.v4.10.2
           argo:
             namespace: openshift-gitops
