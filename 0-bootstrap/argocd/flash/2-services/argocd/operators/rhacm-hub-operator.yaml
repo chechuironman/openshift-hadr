@@ -20,7 +20,7 @@ spec:
     helm:
       values: |
         rhacm-hub-operator:
-          namespace: multicluster-hub
+          namespace: open-cluster-management
           channel: release-2.4      
   syncPolicy:
     automated:

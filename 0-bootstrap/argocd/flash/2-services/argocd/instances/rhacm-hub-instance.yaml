@@ -20,7 +20,7 @@ spec:
     helm:
       values: |
         rhacm-hub-instance:
-          namespace: multicluster-hub    
+          namespace: open-cluster-management  
   syncPolicy:
     automated:
       prune: true
