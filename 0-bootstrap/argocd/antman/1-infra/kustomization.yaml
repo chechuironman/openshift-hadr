@@ -16,7 +16,7 @@ resources:
 - argocd/namespace-openshift-ingress.yaml
 - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 - argocd/namespace-baas.yaml
-- argocd/namespace-ibm-spectrum-protect-plus-ns
+# - argocd/namespace-ibm-spectrum-protect-plus-ns
 - argocd/namespace-ibm-spectrum-scale-csi
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
