@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/ibm-openshift-cluster-csi-drivers
+    path: namespaces/openshift-cluster-csi-drivers
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
