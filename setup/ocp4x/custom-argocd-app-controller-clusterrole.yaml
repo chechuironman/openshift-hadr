@@ -402,3 +402,9 @@ rules:
       - prereq.isf.ibm.com
     resources:
       - spectrumfusions
+  - verbs:
+      - '*'
+    apiGroups:
+      - machineconfiguration.openshift.io
+    resources:
+      - machineconfigs

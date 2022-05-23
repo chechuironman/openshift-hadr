@@ -82,6 +82,10 @@ spec:
     server: https://kubernetes.default.svc 
   - namespace: baas
     server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-protect-plus
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-scale-operator
+    server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
