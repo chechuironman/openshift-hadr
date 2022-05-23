@@ -25,7 +25,7 @@ spec:
           storageClass: ibmc-vpc-block-10iops-tier
           csv: odf-operator.v4.10.2
           argo:
-            namespace: openshift-storage
+            namespace: openshift-gitops
             serviceAccount: openshift-gitops-argocd-application-controller
   syncPolicy:
     automated:
