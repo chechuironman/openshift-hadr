@@ -11,7 +11,7 @@ resources:
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
 - argocd/namespace-openshift-storage.yaml
-# - argocd/namespace-openshift-monitoring.yaml
+- argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
 - argocd/namespace-openshift-ingress.yaml
 - argocd/namespace-ibm-spectrum-fusion-ns.yaml
