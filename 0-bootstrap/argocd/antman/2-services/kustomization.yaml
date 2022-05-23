@@ -38,7 +38,7 @@ resources:
 # IBM fusion
 - argocd/operators/ibm-fusion.yaml
 - argocd/instances/ibm-fusion-instance.yaml
-
+- argocd/instances/ibm-fusion-remote-scale.yaml
 # - argocd/operators/oadp-operator.yaml
 
 # Required for IBM MQ
