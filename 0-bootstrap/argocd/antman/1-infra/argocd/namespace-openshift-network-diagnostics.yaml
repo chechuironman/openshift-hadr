@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-ibm-spectrum-fusion-ns
+  name: namespace-openshift-network-diagnostics
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/ibm-spectrum-fusion-ns
+    path: namespaces/openshift-network-diagnostics
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
