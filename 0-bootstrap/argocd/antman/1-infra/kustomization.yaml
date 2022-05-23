@@ -13,7 +13,7 @@ resources:
 - argocd/namespace-openshift-storage.yaml
 # - argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
-# - argocd/namespace-openshift-ingress.yaml
+- argocd/namespace-openshift-ingress.yaml
 - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 - argocd/namespace-baas.yaml
 # - argocd/namespace-openshift-console.yaml
