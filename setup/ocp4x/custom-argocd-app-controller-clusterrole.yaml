@@ -396,3 +396,9 @@ rules:
       - operator.open-cluster-management.io 
     resources:
       - multiclusterhubs
+  - verbs:
+      - '*'
+    apiGroups:
+      - prereq.isf.ibm.com
+    resources:
+      - spectrumfusions

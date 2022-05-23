@@ -25,6 +25,8 @@ spec:
             name: "ibmcloud"
           cloud:
             region: eu-de
+            cloudpakNodes:
+              nodeCount: 1
   syncPolicy:
     automated:
       prune: true
