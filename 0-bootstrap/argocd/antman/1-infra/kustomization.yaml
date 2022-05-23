@@ -23,7 +23,7 @@ resources:
 # - argocd/namespace-openshift-console-operator.yaml
 - argocd/namespace-openshift-marketplace.yaml
 - argocd/namespace-openshift-operators.yaml
-# - argocd/namespace-openshift-multus.yaml
+- argocd/namespace-openshift-multus.yaml
 - argocd/namespace-openshift-network-diagnostics.yaml
 - argocd/namespace-openshift-operator-lifecycle-manager.yaml
 - argocd/namespace-openshift-cluster-csi-drivers.yaml
