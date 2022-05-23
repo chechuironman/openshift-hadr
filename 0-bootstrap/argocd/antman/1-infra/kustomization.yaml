@@ -18,6 +18,7 @@ resources:
 - argocd/namespace-baas.yaml
 - argocd/namespace-ibm-spectrum-protect-plus-ns.yaml
 - argocd/namespace-ibm-spectrum-scale-csi.yaml
+- argocd/namespace-ibm-spectrum-scale-operator.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
 - argocd/namespace-openshift-marketplace.yaml
