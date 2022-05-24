@@ -20,13 +20,17 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "antman-at6kl"
+          infrastructureId: "antman-nrhjo"
           cloudProvider:
             name: "ibmcloud"
           cloud:
             region: eu-de
             cloudpakNodes:
               nodeCount: 1
+            taints:
+              - effect: "NoSchedule"
+                key: "node-role.kubernetes.io/pak"
+                value: ""
   syncPolicy:
     automated:
       prune: true
