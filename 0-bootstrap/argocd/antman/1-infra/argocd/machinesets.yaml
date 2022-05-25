@@ -24,7 +24,7 @@ spec:
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: eu-de
+            region: us-east
             cloudpakNodes:
               nodeCount: 1
             taints:
