@@ -11,7 +11,7 @@ spec:
   project: infra
   source:
     path: namespaces/openshift-ingress
-    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    repoURL: https://github.com/chechuironman/ocp-IPI-infra
     targetRevision: master
   syncPolicy:
     automated:

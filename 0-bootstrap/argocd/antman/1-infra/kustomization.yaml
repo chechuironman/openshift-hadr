@@ -33,6 +33,7 @@ resources:
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
 - argocd/namespace-openshift-image-registry.yaml
+- argocd/namespace-open-cluster-management-agent.yaml
 # - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 

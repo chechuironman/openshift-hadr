@@ -10,7 +10,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: tools
     server: https://kubernetes.default.svc
   project: infra
   source:
@@ -20,14 +20,17 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "ironman-5jyds"
-          # cloudProvider.name set to aws, azure, ibmcloud or vsphere
-          # cloudProvider.managed set to true for ROSA, ARO, ROKS
+          infrastructureId: "antman-kj3ds"
           cloudProvider:
             name: "ibmcloud"
-          # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
-            region: eu-gb
+            region: us-east
+            cloudpakNodes:
+              nodeCount: 1
+            taints:
+              - effect: "NoSchedule"
+                key: "node-role.kubernetes.io/pak"
+                value: ""
   syncPolicy:
     automated:
       prune: true
