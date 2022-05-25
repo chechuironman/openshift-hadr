@@ -20,11 +20,11 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "antman-kj3ds"
+          infrastructureId: "ironman-5jyds"
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: us-east
+            region: eu-gb
             cloudpakNodes:
               nodeCount: 1
             taints:
