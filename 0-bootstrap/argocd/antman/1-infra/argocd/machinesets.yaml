@@ -20,7 +20,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "antman-d9dbn"
+          infrastructureId: "antman-kj3ds"
           cloudProvider:
             name: "ibmcloud"
           cloud:
