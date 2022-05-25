@@ -27,6 +27,8 @@ spec:
             region: eu-gb
             cloudpakNodes:
               nodeCount: 1
+            storageNodes:
+              nodeCount: 0
   syncPolicy:
     automated:
       prune: true
