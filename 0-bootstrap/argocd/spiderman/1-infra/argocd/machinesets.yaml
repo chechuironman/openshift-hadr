@@ -17,7 +17,7 @@ spec:
     targetRevision: master
     helm:
       values: |
-        machinesets:
+        refarch-machinesets:
           infrastructureId: spiderman-n6hbj
           cloudProvider:
             name: vsphere 
