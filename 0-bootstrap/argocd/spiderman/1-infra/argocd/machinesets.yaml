@@ -21,7 +21,6 @@ spec:
           infrastructureId: "spiderman-n6hbj"
           cloudProvider:
             name: vsphere 
-            managed: false
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
