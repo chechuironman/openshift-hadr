@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: spiderman-n6hbj
+          infrastructureId: "spiderman-n6hbj"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -29,6 +29,26 @@ spec:
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
             folder: spiderman
+            zones:
+              - 1
+            infraNodes:
+              nodeCount: 3
+              diskGiB: 100
+              memoryMiB:  32768
+              numCPUs: 16
+              numCoresPerSocket: 16
+            storageNodes:
+              nodeCount: 3
+              diskGiB: 1000
+              memoryMiB: 65536
+              numCPUs: 32
+              numCoresPerSocket: 32
+            cloudpakNodes:
+              nodeCount: 0
+              diskGiB: 100
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
   syncPolicy:
     automated:
       prune: true
