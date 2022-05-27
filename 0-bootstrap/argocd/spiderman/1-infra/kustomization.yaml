@@ -11,17 +11,29 @@ resources:
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
 - argocd/namespace-openshift-storage.yaml
+- argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
+- argocd/namespace-openshift-ingress.yaml
+- argocd/namespace-ibm-spectrum-fusion-ns.yaml
+- argocd/namespace-baas.yaml
+- argocd/namespace-ibm-spectrum-protect-plus-ns.yaml
+- argocd/namespace-ibm-spectrum-scale-csi.yaml
+- argocd/namespace-ibm-spectrum-scale-operator.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
 # - argocd/namespace-openshift-marketplace.yaml
 # - argocd/namespace-openshift-operators.yaml
+# - argocd/namespace-openshift-multus.yaml
+# - argocd/namespace-openshift-network-diagnostics.yaml
+# - argocd/namespace-openshift-operator-lifecycle-manager.yaml
+# - argocd/namespace-openshift-cluster-csi-drivers.yaml
 # - argocd/namespace-openshift-pipelines.yaml
 # - argocd/namespace-ibm-foundations.yaml
 # - argocd/namespace-kube-system.yaml
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
-# - argocd/namespace-image-registry.yaml
+# - argocd/namespace-openshift-image-registry.yaml
+# - argocd/namespace-open-cluster-management-agent.yaml
 # - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 

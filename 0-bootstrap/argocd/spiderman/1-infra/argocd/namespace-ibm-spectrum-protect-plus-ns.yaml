@@ -1,19 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infraconfig
+  name: namespace-ibm-spectrum-protect-plus-ns
   annotations:
-    argocd.argoproj.io/sync-wave: "102"
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: tools
+    namespace: ibm-spectrum-protect-plus-ns
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: refarch-infraconfig
-    repoURL: https://github.com/chechuironman/roks-infra.git
+    path: namespaces/ibm-spectrum-protect-plus-ns
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:
