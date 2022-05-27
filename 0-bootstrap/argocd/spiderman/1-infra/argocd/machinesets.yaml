@@ -40,7 +40,7 @@ spec:
               numCPUs: 16
               numCoresPerSocket: 16
             storageNodes:
-              nodeCount: 3
+              nodeCount: 6
               diskGiB: 1000
               memoryMiB: 65536
               numCPUs: 32
