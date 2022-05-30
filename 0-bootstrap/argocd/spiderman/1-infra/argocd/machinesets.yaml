@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "spiderman-n6hbj"
+          infrastructureId: "spiderman-gw6xr"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -45,6 +45,7 @@ spec:
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
+              labels: scale=true
             cloudpakNodes:
               nodeCount: 0
               diskGiB: 100
