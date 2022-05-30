@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: thor-f2sw9
+          infrastructureId: "thor-qjfsl"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -27,10 +27,10 @@ spec:
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
-            datastore: SL02SL307608-25
+            datastore: SL02SEL307608-20
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
-            folder: thor
+            folder: spiderman
             zones:
               - 1
             infraNodes:
@@ -40,11 +40,12 @@ spec:
               numCPUs: 16
               numCoresPerSocket: 16
             storageNodes:
-              nodeCount: 3
+              nodeCount: 6
               diskGiB: 1000
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
+              labels: scale=true
             cloudpakNodes:
               nodeCount: 0
               diskGiB: 100

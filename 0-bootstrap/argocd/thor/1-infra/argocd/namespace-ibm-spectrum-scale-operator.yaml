@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-openshift-network-diagnostic
+  name: namespace-ibm-spectrum-scale-operator
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-network-diagnostic
+    namespace: ibm-spectrum-scale-operator
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/openshift-network-diagnostic
+    path: namespaces/ibm-spectrum-scale-operator
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
