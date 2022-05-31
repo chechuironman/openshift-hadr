@@ -13,13 +13,22 @@ spec:
   project: infra
   source:
     path: consolenotification
-    repoURL: https://github.com/chechuironman/roks-infra.git
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra.git
     targetRevision: master
     helm:
       values: |
-        console-notification:
-          consolenotification:
-            text: BATMAN
+        ocp-console-notification:
+          ## The name of the ConsoleNotification resource in the cluster
+          name: "banner-env"
+
+          ## The background color that should be used for the banner
+          backgroundColor: blue
+          ## The color of the text that will appear in the banner
+          color: "'#fff'"
+          ## The location of the banner. Options: BannerTop, BannerBottom, BannerTopBottom
+          location: BannerTop
+          ## The text that should be displayed in the banner. This value is required for the banner to be created
+          text: "BATMAN"
   syncPolicy:
     automated:
       prune: true

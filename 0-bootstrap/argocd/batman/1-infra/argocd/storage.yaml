@@ -1,25 +1,29 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: router-default-pro
+  name: storage
+  labels:
+    gitops.tier.layer: infra
   annotations:
     argocd.argoproj.io/sync-wave: "110"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-ingress
+    namespace: openshift-storage
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: router-default-pro
-    repoURL: https://github.com/chechuironman/roks-infra
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    path: odf-operator
     targetRevision: master
     helm:
       values: |
-        router-default-pro:
-          router:
-            subnets: 02q7-4e92cf22-0a6f-4473-99f3-c0b545ed5edd,02r7-5a4a7516-3265-4d66-b685-f592a734b0ce
+        odf-operator:
+          channel: stable-4.10
+          sizeGiB: 512
+          storageClass: ibmc-vpc-block-10iops-tier
+          csv: odf-operator.v4.10.2
   syncPolicy:
     automated:
       prune: true
