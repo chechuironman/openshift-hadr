@@ -12,39 +12,46 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: machinesets-v2
+    path: machinesets
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
     helm:
       values: |
-        machinesets-v2:
+        refarch-machinesets:
           infrastructureId: "batman-khws4"
+          cloudProvider:
+            name: vsphere 
+            managed: false
           cloud:
-            name: vsphere
-            managed: false # for roks, aro, rosa set to true
-            region: 
+            region: vmwarefix
+          vsphere:
+            networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
+            datacenter: Dallas10
+            datastore: SL02SL307608-25
+            cluster: DAL10 Compute Cluster
+            server: vcsa.vmware.chechu.com
+            folder: batman
             zones:
               - 1
-            vsphere:
-              networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
-              datacenter: Dallas10
-              datastore: SL02SL307608-25
-              cluster: DAL10 Compute Cluster
-              server: vcsa.vmware.chechu.com
-              folder: batman
-          machineset:
-            name: myMachine
-            clusterRole: worker
-            clusterType: worker
-            nodesPerZone: {}
-            memoryMiB: 16384
-            numCPUs: 4
-            numCoresPerSocket: 1
-            volumeSize: 128
-            volumeType: 
-            instanceType:
-            taints: {}
-            labels: {}
+            infraNodes:
+              nodeCount: 3
+              diskGiB: 100
+              memoryMiB:  32768
+              numCPUs: 16
+              numCoresPerSocket: 16
+            storageNodes:
+              nodeCount: 3
+              diskGiB: 1000
+              memoryMiB: 65536
+              numCPUs: 32
+              numCoresPerSocket: 32
+              labels: scale=true
+            cloudpakNodes:
+              nodeCount: 0
+              diskGiB: 100
+              memoryMiB: 16000
+              numCPUs: 4
+              numCoresPerSocket: 4
   syncPolicy:
     automated:
       prune: true
