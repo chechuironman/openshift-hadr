@@ -14,12 +14,12 @@ resources:
 - argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
 - argocd/namespace-openshift-ingress.yaml
-- argocd/namespace-ibm-spectrum-fusion-ns.yaml
-- argocd/namespace-baas.yaml
-- argocd/namespace-ibm-spectrum-protect-plus-ns.yaml
-- argocd/namespace-ibm-spectrum-scale-csi.yaml
-- argocd/namespace-ibm-spectrum-scale.yaml
-- argocd/namespace-ibm-spectrum-scale-operator.yaml
+- argocd/namespace-ibm-spectrum-fusion-ns-v2.yaml
+- argocd/namespace-baas-v2.yaml
+- argocd/namespace-ibm-spectrum-protect-plus-ns-v2.yaml
+- argocd/namespace-ibm-spectrum-scale-csi-v2.yaml
+- argocd/namespace-ibm-spectrum-scale-v2.yaml
+- argocd/namespace-ibm-spectrum-scale-operator-v2.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
 # - argocd/namespace-openshift-marketplace.yaml
