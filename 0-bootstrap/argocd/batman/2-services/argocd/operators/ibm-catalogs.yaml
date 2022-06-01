@@ -15,8 +15,8 @@ spec:
   project: services
   source:
     path: operators/ibm-catalogs
-    repoURL: https://github.com/chechuironman/roks-services
-    targetRevision: master
+    repoURL: https://github.com/chechuironman/ocp-IPI-services
+    targetRevision: main
     helm:
       values: |
         ibm-catalogs:
@@ -70,7 +70,17 @@ spec:
                 image: ibmcom/ibm-db2uoperator-catalog@sha256:7e416ff563492b05daf270e3d8792b1edb70cf6e03bd6a1afca3bc1110f39346
                 updateStrategy:
                   registryPoll:
-                    interval: 45m   
+                    interval: 45m
+            fusion:
+              name: isf-catalog
+              catalog:
+                displayName: ISF Catalog
+                publisher: IBM
+                sourceType: grpc
+                image: cp.icr.io/cpopen/isf-operator-index:2.2.0
+                secrets:
+                  - pull-secret
+             
   syncPolicy:
     automated:
       prune: true

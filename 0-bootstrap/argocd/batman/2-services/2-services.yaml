@@ -6,8 +6,7 @@ metadata:
 spec:
   sourceRepos:
   - https://github.com/chechuironman/openshift-hadr
-  - https://github.com/chechuironman/roks-services.git
-  - https://github.com/chechuironman/ocp-IPI-services
+  - https://github.com/chechuironman/ocp-IPI-services.git
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
   destinations:
   - namespace: external-secrets
@@ -44,6 +43,16 @@ spec:
     server: https://kubernetes.default.svc  
   - namespace: openshift-oadp
     server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-fusion-ns
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-protect-plus-ns
+    server: https://kubernetes.default.svc     
+  - namespace: ibm-spectrum-scale
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-csi
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-operator
+    server: https://kubernetes.default.svc  
   clusterResourceWhitelist:
   # TODO: SCC needs to be moved to 1-infra, here for now for artifactory
   - group: "security.openshift.io"
@@ -76,6 +85,10 @@ spec:
     kind: ClusterRole
   - group: "apiextensions.k8s.io"
     kind: CustomResourceDefinition
+  - group: "machineconfiguration.openshift.io"
+    kind: ContainerRuntimeConfig
+  - group: "machineconfiguration.openshift.io"
+    kind: MachineConfig
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
@@ -104,4 +117,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-
