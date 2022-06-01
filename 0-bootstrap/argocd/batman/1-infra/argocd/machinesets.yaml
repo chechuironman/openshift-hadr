@@ -33,27 +33,40 @@ spec:
               folder: batman
               zones:
                 - 1
-          infraNodes:
-            nodeCount: 3
-            diskGiB: 100
-            memoryMiB:  32768
-            numCPUs: 16
-            numCoresPerSocket: 16
-          storageNodes:
-            nodeCount: 3
-            diskGiB: 1000
-            memoryMiB: 65536
-            numCPUs: 32
-            numCoresPerSocket: 32
-            labels: scale=true
-          cloudpakNodes:
-            nodeCount: 0
-            diskGiB: 100
-            memoryMiB: 16000
-            numCPUs: 4
-            numCoresPerSocket: 4
+              infraNodes:
+                nodeCount: 3
+                diskGiB: 100
+                memoryMiB:  32768
+                numCPUs: 16
+                numCoresPerSocket: 16
+              storageNodes:
+                nodeCount: 3
+                diskGiB: 1000
+                memoryMiB: 65536
+                numCPUs: 32
+                numCoresPerSocket: 32
+                labels: scale=true
+              cloudpakNodes:
+                nodeCount: 0
+                diskGiB: 100
+                memoryMiB: 16000
+                numCPUs: 4
+                numCoresPerSocket: 4
           machineset:
             name: myMachine
+            clusterRole: worker
+            clusterType: worker
+            nodesPerZone: {}
+            memoryMiB: 16384
+            numCPUs: 4
+            numCoresPerSocket: 1
+            volumeSize: 128
+            volumeType: 
+            instanceType:
+            taints: {}
+            labels: {}
+          machineset:
+            name: myMachine2
             clusterRole: worker
             clusterType: worker
             nodesPerZone: {}
