@@ -19,39 +19,27 @@ spec:
       values: |
         machinesets-v2:
           infrastructureId: "batman-khws4"
-          cloudProvider:
-            name: vsphere 
-            managed: false
           cloud:
-            region: vmwarefix
+            name: vsphere
+            managed: false # for roks, aro, rosa set to true
+            region: 
+            zones:
+              - 1
+            aws:
+              ami:
+            azure:
+              resourceGroup:
+              networkResourceGroup:
+              virtualNetwork:
+              workerSubnet:
             vsphere:
-              networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
+              networkName:  vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
               datacenter: Dallas10
               datastore: SL02SL307608-25
               cluster: DAL10 Compute Cluster
               server: vcsa.vmware.chechu.com
               folder: batman
-              zones:
-                - 1
-              infraNodes:
-                nodeCount: 3
-                diskGiB: 100
-                memoryMiB:  32768
-                numCPUs: 16
-                numCoresPerSocket: 16
-              storageNodes:
-                nodeCount: 3
-                diskGiB: 1000
-                memoryMiB: 65536
-                numCPUs: 32
-                numCoresPerSocket: 32
-                labels: scale=true
-              cloudpakNodes:
-                nodeCount: 0
-                diskGiB: 100
-                memoryMiB: 16000
-                numCPUs: 4
-                numCoresPerSocket: 4
+
           machineset:
             name: myMachine
             clusterRole: worker
@@ -65,13 +53,6 @@ spec:
             instanceType:
             taints: {}
             labels: {}
-          storageNodes:
-                nodeCount: 3
-                diskGiB: 1000
-                memoryMiB: 65536
-                numCPUs: 32
-                numCoresPerSocket: 32
-                labels: scale=true
   syncPolicy:
     automated:
       prune: true
