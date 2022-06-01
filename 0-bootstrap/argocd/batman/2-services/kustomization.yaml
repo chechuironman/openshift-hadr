@@ -34,8 +34,12 @@ resources:
 # - argocd/operators/ibm-foundations.yaml
 # - argocd/instances/ibm-foundations.yaml
 
+# IBM fusion
+- argocd/operators/ibm-fusion.yaml
+# - argocd/instances/ibm-fusion-instance.yaml
+
 # IBM Catalogs
-# - argocd/operators/ibm-catalogs.yaml
+- argocd/operators/ibm-catalogs.yaml
 
 # - argocd/operators/oadp-operator.yaml
 
