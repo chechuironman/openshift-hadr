@@ -25,13 +25,6 @@ spec:
             region: 
             zones:
               - 1
-            aws:
-              ami:
-            azure:
-              resourceGroup:
-              networkResourceGroup:
-              virtualNetwork:
-              workerSubnet:
             vsphere:
               networkName:  vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
               datacenter: Dallas10
@@ -39,7 +32,6 @@ spec:
               cluster: DAL10 Compute Cluster
               server: vcsa.vmware.chechu.com
               folder: batman
-
           machineset:
             name: myMachine
             clusterRole: worker
