@@ -26,7 +26,7 @@ spec:
             zones:
               - 1
             vsphere:
-              networkName:  vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
+              networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
               datacenter: Dallas10
               datastore: SL02SL307608-25
               cluster: DAL10 Compute Cluster
