@@ -405,6 +405,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - cns.isf.ibm.com
+    resources:
+      - scaleclusters
+  - verbs:
+      - '*'
+    apiGroups:
       - machineconfiguration.openshift.io
     resources:
       - machineconfigs
