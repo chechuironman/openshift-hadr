@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: venom-tchxv
+          infrastructureId: venom-zt4wm
           cloudProvider:
             name: vsphere 
             managed: false
@@ -28,7 +28,7 @@ spec:
             datastore: SL02SEL307608-20
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
-            folder: spiderman
+            folder: venom
             zones:
               - 1
             infraNodes:
