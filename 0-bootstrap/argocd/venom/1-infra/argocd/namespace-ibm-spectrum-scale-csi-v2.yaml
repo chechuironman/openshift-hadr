@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: storageclass-cp4a
+  name: namespace-ibm-spectrum-scale-csi
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: cloudpak
+    namespace: ibm-spectrum-scale-csi
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: storageclass/ibm-cloud-cp4a
+    path: namespaces/ibm-spectrum-scale-csi-v2
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:

@@ -1,18 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infraconfig
+  name: namespace-open-cluster-management-agent
   annotations:
-    argocd.argoproj.io/sync-wave: "102"
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: tools
+    namespace: open-cluster-management-agent
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: refarch-infraconfig
+    path: namespaces/open-cluster-management-agent
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:

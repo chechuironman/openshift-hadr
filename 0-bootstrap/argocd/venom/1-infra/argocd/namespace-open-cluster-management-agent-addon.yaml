@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-openshift-cluster-storage-operator
+  name: namespace-open-cluster-management-agent-addon
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-cluster-storage-operator
+    namespace: open-cluster-management-agent
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/openshift-cluster-storage-operator
+    path: namespaces/open-cluster-management-agent-addon
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:

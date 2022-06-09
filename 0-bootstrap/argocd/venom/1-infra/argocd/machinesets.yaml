@@ -17,11 +17,13 @@ spec:
     targetRevision: master
     helm:
       values: |
-        machinesets:
-          infrastructureId: venom-zt4wm
+        refarch-machinesets:
+          infrastructureId: "venom-mgs4s"
           cloudProvider:
             name: vsphere 
             managed: false
+          cloud:
+            region: vmwarefix
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
@@ -43,6 +45,7 @@ spec:
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
+              labels: scale=true
             cloudpakNodes:
               nodeCount: 0
               diskGiB: 100

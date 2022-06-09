@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-cloudpak
+  name: namespace-ibm-spectrum-scale
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: cloudpak
+    namespace: ibm-spectrum-scale
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/cloudpak
+    path: namespaces/ibm-spectrum-scale
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
