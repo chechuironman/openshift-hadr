@@ -21,11 +21,11 @@ spec:
       values: |
         ibm-fusion-spectrum-remote:
           fusion:
-            remotecluster_id: "11961113419937114154"
-            node_fqdn_1: spectrum-scale-2-1.chechu.com
-            node_ip_1: 70.85.50.4
-            node_fqdn_2: spectrum-scale-2-2.chechu.com
-            node_ip_2: 70.85.50.5
+            remotecluster_id: "385763033470755166"
+            node_fqdn_1: spectrum-scale-1.chechu.com
+            node_ip_1: 70.85.40.4
+            node_fqdn_2: spectrum-scale-2.chechu.com
+            node_ip_2: 70.85.40.5
             storageclass_fusion: fusion-scale
             filesystem: fs0    
             csi_secret_user: QmF0TWFuXzIwMjA=
