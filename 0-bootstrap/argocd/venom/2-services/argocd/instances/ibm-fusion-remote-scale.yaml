@@ -28,10 +28,10 @@ spec:
             node_ip_2: 70.85.50.5
             storageclass_fusion: fusion-scale
             filesystem: fs0    
-            csi_secret_user: QmF0TWFuXzIwMjA=
-            csi_secret_password: Y25zYV9zdG9yYWdlX2d1aV91c2Vy
-            gui_secret_password: Y25zYV9zdG9yYWdlX2d1aV91c2Vy  
-            gui_secret_user: QmF0TWFuXzIwMjA=     
+            csi_secret_user: Y25zYV9zdG9yYWdlX2d1aV91c2Vy
+            csi_secret_password: QmF0TWFuXzIwMjA=
+            gui_secret_password: QmF0TWFuXzIwMjA=  
+            gui_secret_user: Y25zYV9zdG9yYWdlX2d1aV91c2Vy    
   syncPolicy:
     automated:
       prune: true
