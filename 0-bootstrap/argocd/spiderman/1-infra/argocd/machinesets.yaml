@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "spiderman-8rn82"
+          infrastructureId: "spiderman-p48xw"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -27,7 +27,7 @@ spec:
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
-            datastore: SL02SL307608-47
+            datastore: SL02SL307608-29-ONTAP1
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
             folder: spiderman
