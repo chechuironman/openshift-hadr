@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "thor-sldzw"
+          infrastructureId: "thor-wh9pq"
           cloudProvider:
             name: vsphere 
             managed: false
