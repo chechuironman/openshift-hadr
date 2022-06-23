@@ -24,12 +24,6 @@ spec:
           sizeGiB: 512
           storageClass: thin
           csv: odf-operator.v4.10.2
-          otherNodes:
-            taints:
-              - effect: "NoSchedule"
-                key: "fusion"
-                value: "true"
-
   syncPolicy:
     automated:
       prune: true
