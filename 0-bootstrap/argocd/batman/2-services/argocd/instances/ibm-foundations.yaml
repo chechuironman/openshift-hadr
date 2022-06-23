@@ -17,7 +17,7 @@ spec:
     targetRevision: main
     helm:
       values: |
-        ibm-common-services:
+        ibm-common-services-instance:
           subscriptions:
             subscription:
               channel: v3
