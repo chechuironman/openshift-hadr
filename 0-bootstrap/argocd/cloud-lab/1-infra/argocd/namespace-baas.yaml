@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: storageclass-cp4a
+  name: namespace-baas
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: cloudpak
+    namespace: baas
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: storageclass/ibm-cloud-cp4a
-    repoURL: https://github.com/chechuironman/roks-infra
+    path: namespaces/baas
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:

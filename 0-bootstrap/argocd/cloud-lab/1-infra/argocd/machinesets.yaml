@@ -17,11 +17,13 @@ spec:
     targetRevision: master
     helm:
       values: |
-        machinesets:
-          infrastructureId: cloud-lab-b2d87
+        refarch-machinesets:
+          infrastructureId: "cloud-lab-5mrqs"
           cloudProvider:
             name: vsphere 
             managed: false
+          cloud:
+            region: vmwarefix
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
@@ -38,15 +40,16 @@ spec:
               numCPUs: 16
               numCoresPerSocket: 16
             storageNodes:
-              nodeCount: 0
+              nodeCount: 3
               diskGiB: 1000
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
+              labels: scale=true
             cloudpakNodes:
               nodeCount: 3
               diskGiB: 100
-              memoryMiB: 32768
+              memoryMiB: 32000
               numCPUs: 16
               numCoresPerSocket: 16
   syncPolicy:
