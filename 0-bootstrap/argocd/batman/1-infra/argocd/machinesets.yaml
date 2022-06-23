@@ -47,7 +47,7 @@ spec:
               numCoresPerSocket: 32
               labels: scale=true
             cloudpakNodes:
-              nodeCount: 0
+              nodeCount: 3
               diskGiB: 100
               memoryMiB: 16000
               numCPUs: 4
