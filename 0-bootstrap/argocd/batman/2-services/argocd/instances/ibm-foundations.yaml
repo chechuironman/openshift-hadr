@@ -14,14 +14,19 @@ spec:
   source:
     path: instances/ibm-foundation
     repoURL: https://github.com/chechuironman/ocp-ipi-services
-    targetRevision: master
+    targetRevision: main
     helm:
       values: |
-        ibm-common-services-instance:
-          ibmcommonservices:
-            name: common-service
-            spec:
-              size: small
+        ibm-common-services:
+          subscriptions:
+            subscription:
+              channel: v3
+              config:
+                resources: {}
+              installPlanApproval: Automatic
+              name: ibm-common-service-operator
+              source: opencloud-operators
+              sourceNamespace: openshift-marketplace
   syncPolicy:
     automated:
       prune: true

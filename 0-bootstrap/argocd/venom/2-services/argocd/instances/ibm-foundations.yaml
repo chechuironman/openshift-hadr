@@ -14,7 +14,7 @@ spec:
   source:
     path: instances/ibm-foundation
     repoURL: https://github.com/chechuironman/ocp-ipi-services
-    targetRevision: master
+    targetRevision: main
     helm:
       values: |
         ibm-common-services-instance:
