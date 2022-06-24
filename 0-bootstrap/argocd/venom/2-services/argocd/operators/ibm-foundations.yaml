@@ -25,11 +25,10 @@ spec:
               channel: v3
               config:
                 resources: {}
-              channel: v3
               installPlanApproval: Automatic
               name: ibm-common-service-operator
-              source: ibm-operator-catalog
-              sourceNamespace: openshift-marketplace       
+              source: opencloud-operators
+              sourceNamespace: openshift-marketplace      
   syncPolicy:
     automated:
       prune: true
