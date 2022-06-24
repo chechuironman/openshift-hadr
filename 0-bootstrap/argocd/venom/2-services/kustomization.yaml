@@ -7,7 +7,7 @@ resources:
 # - argocd/operators/ibm-cp4i-operators.yaml
 #- argocd/operators/ibm-datapower-operator.yaml
 #- argocd/operators/ibm-eventstreams-operator.yaml
-- argocd/operators/ibm-mq-operator.yaml
+# - argocd/operators/ibm-mq-operator.yaml
 # - argocd/operators/ibm-db2-operator.yaml
 #- argocd/operators/ibm-opsdashboard-operator.yaml
 # - argocd/operators/ibm-platform-navigator.yaml
@@ -31,8 +31,8 @@ resources:
 # - argocd/operators/cp4d-platform.yaml
 
 # IBM Foundations / Common Services
-- argocd/operators/ibm-foundations.yaml
-- argocd/instances/ibm-foundations.yaml
+# - argocd/operators/ibm-foundations.yaml
+# - argocd/instances/ibm-foundations.yaml
 
 # IBM fusion
 # - argocd/operators/ibm-fusion.yaml
