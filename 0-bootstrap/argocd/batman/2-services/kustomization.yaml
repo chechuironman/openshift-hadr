@@ -39,7 +39,7 @@ resources:
 # - argocd/instances/ibm-fusion-instance.yaml
 # - argocd/instances/ibm-fusion-remote-scale.yaml
 # IBM Catalogs
-# - argocd/operators/ibm-catalogs.yaml
+- argocd/operators/ibm-catalogs.yaml
 
 # - argocd/operators/oadp-operator.yaml
 
