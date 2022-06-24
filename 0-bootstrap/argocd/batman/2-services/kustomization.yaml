@@ -7,7 +7,7 @@ resources:
 # - argocd/operators/ibm-cp4i-operators.yaml
 #- argocd/operators/ibm-datapower-operator.yaml
 #- argocd/operators/ibm-eventstreams-operator.yaml
-- argocd/operators/ibm-mq-operator.yaml
+# - argocd/operators/ibm-mq-operator.yaml
 # - argocd/operators/ibm-db2-operator.yaml
 #- argocd/operators/ibm-opsdashboard-operator.yaml
 # - argocd/operators/ibm-platform-navigator.yaml
@@ -39,7 +39,7 @@ resources:
 # - argocd/instances/ibm-fusion-instance.yaml
 # - argocd/instances/ibm-fusion-remote-scale.yaml
 # IBM Catalogs
-- argocd/operators/ibm-catalogs.yaml
+# - argocd/operators/ibm-catalogs.yaml
 
 # - argocd/operators/oadp-operator.yaml
 
