@@ -31,7 +31,7 @@ resources:
 # - argocd/operators/cp4d-platform.yaml
 
 # IBM Foundations / Common Services
-# - argocd/operators/ibm-foundations.yaml
+- argocd/operators/ibm-foundations.yaml
 # - argocd/instances/ibm-foundations.yaml
 
 # IBM fusion
