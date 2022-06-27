@@ -52,6 +52,7 @@ spec:
               memoryMiB: 16000
               numCPUs: 4
               numCoresPerSocket: 4
+              labels: node-role.kubernetes.io/cloud-paks=true
   syncPolicy:
     automated:
       prune: true
