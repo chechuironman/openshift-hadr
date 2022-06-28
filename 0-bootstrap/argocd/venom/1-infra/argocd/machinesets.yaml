@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "venom-mr7m4"
+          infrastructureId: "venom-76g52"
           cloudProvider:
             name: vsphere 
             managed: false
