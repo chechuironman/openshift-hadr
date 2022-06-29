@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "batman-5kg9s"
+          infrastructureId: "batman-8pks7"
           cloudProvider:
             name: vsphere 
             managed: false
