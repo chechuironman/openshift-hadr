@@ -28,6 +28,7 @@ spec:
             git_branch: main
             git_path: github.com/chechuironman/helm-repo
             git_folder: test-mq
+            odr_policy: odr-policy-1m
   syncPolicy:
     automated:
       prune: true
