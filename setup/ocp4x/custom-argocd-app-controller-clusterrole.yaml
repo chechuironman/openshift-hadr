@@ -6,6 +6,26 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - app.k8s.io
+    resources:
+      - applications
+  - verbs:
+      - '*'
+    apiGroups:
+      - apps.open-cluster-management.io
+    resources:
+      - channels
+      - subscriptions
+      - placementrules
+  - verbs:
+      - '*'
+    apiGroups:
+      - ramendr.openshift.io
+    resources:
+      - drplacementcontrols
+  - verbs:
+      - '*'
+    apiGroups:
       - ''
     resources:
       - pods
@@ -408,26 +428,6 @@ rules:
       - cns.isf.ibm.com
     resources:
       - scaleclusters
-  - verbs:
-      - '*'
-    apiGroups:
-      - app.k8s.io
-    resources:
-      - applications
-  - verbs:
-      - '*'
-    apiGroups:
-      - apps.open-cluster-management.io
-    resources:
-      - channels
-      - subscriptions
-      - placementrules
-  - verbs:
-      - '*'
-    apiGroups:
-      - ramendr.openshift.io
-    resources:
-      - drplacementcontrols
   - verbs:
       - '*'
     apiGroups:

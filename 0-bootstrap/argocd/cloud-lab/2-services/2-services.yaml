@@ -75,8 +75,9 @@ spec:
     kind: ClusterRole
   - group: "apiextensions.k8s.io"
     kind: CustomResourceDefinition
-  - group: "apps.open-cluster-management.io"
+  - group: apps.open-cluster-management.io
     kind: subscriptions
+
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
