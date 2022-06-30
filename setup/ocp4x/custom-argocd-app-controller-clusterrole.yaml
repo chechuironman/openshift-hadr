@@ -6,13 +6,13 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - app.k8s.io
+      - 'app.k8s.io'
     resources:
       - applications
   - verbs:
       - '*'
     apiGroups:
-      - apps.open-cluster-management.io
+      - 'apps.open-cluster-management.io'
     resources:
       - channels
       - subscriptions
@@ -20,7 +20,7 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - ramendr.openshift.io
+      - 'ramendr.openshift.io'
     resources:
       - drplacementcontrols
   - verbs:
