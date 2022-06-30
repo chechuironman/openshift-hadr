@@ -12,20 +12,22 @@ spec:
     server: https://kubernetes.default.svc
   project: services
   source:
-    path: instances/mq-instance
-    repoURL: https://github.com/chechuironman/roks-services.git
+    path: instances/mq-instance-dr
+    repoURL: https://github.com/chechuironman/ocp-IPI-services.git
     targetRevision: master
     helm:
       values: |
-        mq-instance:
-          mq_instance:
+        mq-instance-dr:
+          mq_instance_dr:
             name: testdr
             namespace: cloudpak
-            storage_class: ibm-spectrum-scale-csi-fileset
-            configmap: testdr-cm
-            secret: nativehacert
-            version: 9.2.3.0-r1
-            queuename: batmanqueue
+            preferredCluster: batman
+            matchLabel: 
+            failoverCluster:
+            action:
+            git_branch: main
+            git_path: github.com/chechuironman/helm-repo
+            git_folder: test-mq
   syncPolicy:
     automated:
       prune: true
