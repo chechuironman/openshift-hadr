@@ -22,7 +22,7 @@ spec:
             name: testdr
             namespace: cloudpak
             preferredCluster: batman
-            matchLabel: app.kubernetes.io/instance=quickstart-cp4i
+            matchLabel: app.kubernetes.io/instance:quickstart-cp4i
             failoverCluster:
             action:
             git_branch: main
