@@ -14,7 +14,7 @@ spec:
   source:
     path: instances/mq-instance-dr
     repoURL: https://github.com/chechuironman/ocp-IPI-services.git
-    targetRevision: master
+    targetRevision: main
     helm:
       values: |
         mq-instance-dr:
