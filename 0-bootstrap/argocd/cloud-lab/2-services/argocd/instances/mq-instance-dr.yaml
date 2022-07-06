@@ -23,8 +23,8 @@ spec:
             namespace: cloudpak
             preferredCluster: batman
             matchLabel: quickstart-cp4i
-            failoverCluster:
-            action:
+            failoverCluster: venom
+            action: Failover
             git_branch: main
             git_path: github.com/chechuironman/helm-repo
             git_folder: test-mq
