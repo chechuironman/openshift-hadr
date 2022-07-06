@@ -70,3 +70,8 @@ resources:
 #- argocd/operators/kiali.yaml
 #- argocd/operators/openshift-service-mesh.yaml
 #- argocd/instances/openshift-service-mesh-instance.yaml
+
+
+##WAIOPS
+
+- argocd/operators/ibm-cp4waiops-operator
