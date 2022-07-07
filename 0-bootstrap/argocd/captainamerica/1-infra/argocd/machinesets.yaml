@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         machinesets:
-          infrastructureId: spiderman-n6hbj
+          infrastructureId: captainamerica-dfbrl
           cloudProvider:
             name: vsphere 
             managed: false
@@ -39,15 +39,15 @@ spec:
               numCoresPerSocket: 16
             storageNodes:
               nodeCount: 3
-              diskGiB: 1000
+              diskGiB: 100
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
             cloudpakNodes:
-              nodeCount: 0
+              nodeCount: 9
               diskGiB: 100
-              memoryMiB: 16000
-              numCPUs: 4
+              memoryMiB: 64000
+              numCPUs: 32
               numCoresPerSocket: 4
   syncPolicy:
     automated:
