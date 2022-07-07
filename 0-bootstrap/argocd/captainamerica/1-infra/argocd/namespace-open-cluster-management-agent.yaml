@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-staging
+  name: namespace-open-cluster-management-agent
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: staging
+    namespace: open-cluster-management-agent
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/staging
-    repoURL: https://https://github.com/chechuironman/roks-infra
+    path: namespaces/open-cluster-management-agent
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:

@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-dev
+  name: namespace-ibm-spectrum-fusion-ns
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: dev
+    namespace: ibm-spectrum-fusion-ns
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/dev
-    repoURL: https://https://github.com/chechuironman/roks-infra
+    path: namespaces/ibm-spectrum-fusion-ns-v2
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:

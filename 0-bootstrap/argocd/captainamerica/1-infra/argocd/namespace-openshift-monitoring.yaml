@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-cpd-instance
+  name: namespace-openshift-monitoring
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: ci
+    namespace: openshift-monitoring
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/cpd-instance
-    repoURL: https://github.com/chechuironman/roks-infra
+    path: namespaces/openshift-monitoring
+    repoURL: https://github.com/chechuironman/ocp-IPI-infra
     targetRevision: master
   syncPolicy:
     automated:

@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-system
+  name: namespace-openshift-ingress
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: istio-system
+    namespace: openshift-ingress
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/istio-system
-    repoURL: https://https://github.com/chechuironman/roks-infra
+    path: namespaces/openshift-ingress
+    repoURL: https://github.com/chechuironman/ocp-IPI-infra
     targetRevision: master
   syncPolicy:
     automated:
