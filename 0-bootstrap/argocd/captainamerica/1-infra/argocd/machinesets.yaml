@@ -33,6 +33,7 @@ spec:
                 - effect: "NoSchedule"
                   key: "node-role.kubernetes.io/cloud-paks"
                   value: "true"
+              labells: "node-role.kubernetes.io/cloud-paks=true"
   syncPolicy:
     automated:
       prune: true
