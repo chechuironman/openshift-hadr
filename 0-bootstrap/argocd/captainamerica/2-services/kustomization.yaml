@@ -29,14 +29,14 @@ resources:
 # - argocd/instances/cp4data-instance.yaml
 
 # IBM Foundations / Common Services
-# - argocd/operators/ibm-foundations.yaml
-# - argocd/instances/ibm-foundations.yaml
+- argocd/operators/ibm-foundations.yaml
+- argocd/instances/ibm-foundations.yaml
 
 # IBM Catalogs
 - argocd/operators/ibm-catalogs.yaml
 
 # IBM fusion
-- argocd/operators/ibm-fusion.yaml
+# - argocd/operators/ibm-fusion.yaml
 # - argocd/instances/ibm-fusion-instance.yaml
 
 # - argocd/operators/oadp-operator.yaml
