@@ -21,7 +21,7 @@ spec:
       values: |
         ibm-fusion-instance:
           fusion:
-            storageclass: ocs-storagecluster-cephfs      
+            storageclass: thin      
   syncPolicy:
     automated:
       prune: true
