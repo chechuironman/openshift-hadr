@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/ibm-spectrum-scale-csi
+    path: namespaces/ibm-spectrum-scale-csi-v2
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
