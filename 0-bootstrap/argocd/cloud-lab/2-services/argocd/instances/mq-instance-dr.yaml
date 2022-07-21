@@ -22,7 +22,7 @@ spec:
             name: testdr
             namespace: cloudpak
             preferredCluster: batman
-            matchLabel: quickstart-cp4i
+            matchLabel: externalmqwithoutcustomroute
             failoverCluster: venom
             action: failoverCluster
             git_branch: main
