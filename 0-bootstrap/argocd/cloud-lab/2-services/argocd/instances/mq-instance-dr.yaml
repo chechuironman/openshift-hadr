@@ -24,7 +24,7 @@ spec:
             preferredCluster: batman
             matchLabel: externalmqwithoutcustomroute
             failoverCluster: venom
-            action: failoverCluster
+            action: Failover
             git_branch: main
             git_path: github.com/chechuironman/helm-repo
             git_folder: test-mq
