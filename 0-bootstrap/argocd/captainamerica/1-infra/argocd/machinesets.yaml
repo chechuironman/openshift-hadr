@@ -24,7 +24,7 @@ spec:
           cloud:
             region: eu-de
             cloudpakNodes:
-              nodeCount: 6
+              nodeCount: 2
               diskGiB: 100
               memoryMiB: 64000
               numCPUs: 32
