@@ -25,11 +25,11 @@ spec:
             region: eu-de
             infraNodes:
               nodeCount: 1
-              instanceType: cx2-16x32
+              instanceType: "cx2-16x32"
             cloudpakNodes:
               nodeCount: 2
               diskGiB: 100
-              instanceType: cx2-32x64
+              instanceType: "cx2-32x64"
               taints:
                 - effect: "NoSchedule"
                   key: "node-role.kubernetes.io/cloud-paks"
