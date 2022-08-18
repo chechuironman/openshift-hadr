@@ -50,6 +50,8 @@ resources:
 - argocd/storage.yaml
 #- argocd/storageclass-cp4a.yaml
 
+- argocd/namespace-aiops.yaml
+
 
 
 
