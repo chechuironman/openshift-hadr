@@ -75,3 +75,4 @@ resources:
 ##WAIOPS
 
 - argocd/operators/ibm-aiops.yaml
+- argocd/instances/ibm-aiops.yaml

@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ibm-aiops-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "310"
+  labels:
+    gitops.tier.group: ibm-cloudpak
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: aiops
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: instances/ibm-aiops
+    repoURL: https://github.com/chechuironman/ocp-ipi-services
+    targetRevision: main
+    helm:
+      values: |
+        cp4aiops-instance:
+          aiops_instance:
+            name_instance: ibm-cp-watson-aiops
+            name_infra: ibm-cp-watson-aiops-iinfra
+            namespace: aiops
+            size: small
+            storage_class: ocs-storagecluster-cephfs
+            storage_class_large: ocs-storagecluster-ceph-rbd
+            infra: false
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
