@@ -23,6 +23,11 @@ spec:
             name: "ibmcloud"
           cloud:
             region: eu-de
+            infraNodes:
+              nodeCount: 1
+              memoryMiB: 32000
+              numCPUs: 16
+              numCoresPerSocket: 16
             cloudpakNodes:
               nodeCount: 2
               diskGiB: 100
