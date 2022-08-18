@@ -22,18 +22,18 @@ resources:
 # - argocd/namespace-ibm-spectrum-scale-operator-v2.yaml
 # - argocd/namespace-openshift-console.yaml
 # - argocd/namespace-openshift-console-operator.yaml
-# - argocd/namespace-openshift-marketplace.yaml
+- argocd/namespace-openshift-marketplace.yaml
 - argocd/namespace-openshift-operators.yaml
 # - argocd/namespace-openshift-multus.yaml
-# - argocd/namespace-openshift-network-diagnostics.yaml
-# - argocd/namespace-openshift-operator-lifecycle-manager.yaml
+- argocd/namespace-openshift-network-diagnostics.yaml
+- argocd/namespace-openshift-operator-lifecycle-manager.yaml
 # - argocd/namespace-openshift-cluster-csi-drivers.yaml
 # - argocd/namespace-openshift-pipelines.yaml
 - argocd/namespace-ibm-foundations.yaml
 # - argocd/namespace-kube-system.yaml
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
-# - argocd/namespace-openshift-image-registry.yaml
+- argocd/namespace-openshift-image-registry.yaml
 - argocd/namespace-open-cluster-management-agent.yaml
 - argocd/namespace-open-cluster-management-agent-addon.yaml
 - argocd/namespace-submariner-operator.yaml
