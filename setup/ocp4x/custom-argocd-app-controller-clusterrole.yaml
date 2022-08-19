@@ -6,6 +6,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - 'orchestrator.aiops.ibm.com'
+    resources:
+      - installations
+  - verbs:
+      - '*'
+    apiGroups:
       - 'app.k8s.io'
     resources:
       - applications
