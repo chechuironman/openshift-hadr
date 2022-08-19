@@ -21,12 +21,6 @@ spec:
           infrastructureId: "captainamerica-yvvqf"
           cloudProvider:
             name: "ibmcloud"
-          global:
-            cloudpakNodes
-              taints:
-                  - effect: "NoSchedule"
-                    key: "node-role.kubernetes.io/cloud-paks"
-                    value: "true"
           cloud:
             region: eu-de
             infraNodes:
