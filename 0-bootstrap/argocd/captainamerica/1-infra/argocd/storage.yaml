@@ -24,7 +24,7 @@ spec:
           sizeGiB: 512
           storageClass: ibmc-vpc-block-10iops-tier
           csv: odf-operator.v4.10.2
-          cloudpakNodes:
+          otherNodes:
             taints: 
             - effect: NoSchedule
               key: node-role.kubernetes.io/cloud-paks
