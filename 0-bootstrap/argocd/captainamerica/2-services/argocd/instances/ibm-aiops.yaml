@@ -27,7 +27,7 @@ spec:
             size: small
             storage_class: ocs-storagecluster-cephfs
             storage_class_large: ocs-storagecluster-ceph-rbd
-            infra: 
+            infra: "False"
   syncPolicy:
     automated:
       prune: true
