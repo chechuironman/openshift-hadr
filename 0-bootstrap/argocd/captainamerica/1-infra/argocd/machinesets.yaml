@@ -31,7 +31,7 @@ spec:
               diskGiB: 100
               instanceType: "cx2-32x64"
               labels: 
-                node-role.kubernetes.io/cloud-paks=true
+                node-role.kubernetes.io/cloud-paks:true
               taints:
                 - effect: "NoSchedule"
                   key: "node-role.kubernetes.io/cloud-paks"
