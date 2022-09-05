@@ -98,6 +98,8 @@ spec:
     server: https://kubernetes.default.svc  
   - namespace: open-cluster-management-agent
     server: https://kubernetes.default.svc 
+  - namespace: turbonomic
+    server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
