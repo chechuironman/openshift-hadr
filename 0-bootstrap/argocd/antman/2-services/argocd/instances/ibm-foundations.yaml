@@ -13,8 +13,15 @@ spec:
   project: services
   source:
     path: instances/ibm-foundation
-    repoURL: https://github.com/chechuironman/ocp-IPI-services
-    targetRevision: master
+    repoURL: https://github.com/chechuironman/ocp-ipi-services
+    targetRevision: main
+    helm:
+      values: |
+        ibm-common-services-instance:
+          ibmcommonservices:
+            name: common-service
+            spec:
+              size: small
   syncPolicy:
     automated:
       prune: true
