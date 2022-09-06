@@ -6,6 +6,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - 'charts.helm.k8s.io'
+    resources:
+      - xls
+  - verbs:
+      - '*'
+    apiGroups:
       - 'orchestrator.aiops.ibm.com'
     resources:
       - installations
