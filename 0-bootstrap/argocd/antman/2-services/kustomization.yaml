@@ -33,7 +33,7 @@ resources:
 - argocd/instances/ibm-foundations.yaml
 
 # IBM Catalogs
-# - argocd/operators/ibm-catalogs.yaml
+- argocd/operators/ibm-catalogs.yaml
 
 # IBM fusion
 # - argocd/operators/ibm-fusion.yaml
