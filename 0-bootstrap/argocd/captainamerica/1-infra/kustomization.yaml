@@ -37,7 +37,7 @@ resources:
 - argocd/namespace-open-cluster-management-agent.yaml
 - argocd/namespace-open-cluster-management-agent-addon.yaml
 - argocd/namespace-submariner-operator.yaml
-# - argocd/namespace-external-secrets.yaml
+- argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
 # - argocd/namespace-cpd-operators.yaml
