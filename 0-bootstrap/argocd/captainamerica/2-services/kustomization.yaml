@@ -76,3 +76,9 @@ resources:
 
 - argocd/operators/ibm-aiops.yaml
 - argocd/instances/ibm-aiops.yaml
+
+
+### Secrets
+
+- argocd/secrets/ibm-secret-store.yaml
+- argocd/secrets/argocd-admin-user.yaml

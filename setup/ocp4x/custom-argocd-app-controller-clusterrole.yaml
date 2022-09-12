@@ -6,6 +6,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - 'operator.external-secrets.io'
+    resources:
+      - operatorconfigs
+  - verbs:
+      - '*'
+    apiGroups:
       - 'charts.helm.k8s.io'
     resources:
       - xls
