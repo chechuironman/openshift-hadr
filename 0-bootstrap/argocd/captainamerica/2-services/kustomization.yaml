@@ -82,3 +82,4 @@ resources:
 
 - argocd/secrets/ibm-secret-store.yaml
 - argocd/secrets/argocd-admin-user.yaml
+- argocd/secrets/argocd-tls.yaml
