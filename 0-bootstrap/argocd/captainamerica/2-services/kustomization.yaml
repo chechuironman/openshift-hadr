@@ -80,6 +80,7 @@ resources:
 
 ### Secrets
 
+- argocd/secrets/ibm-cluster-secret-store.yaml
 # - argocd/secrets/ibm-secret-store-gitops.yaml
 # - argocd/secrets/argocd-admin-user.yaml
 # - argocd/secrets/openshift-gitops-cntk-tls.yaml
