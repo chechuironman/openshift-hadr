@@ -80,6 +80,10 @@ resources:
 
 ### Secrets
 
-- argocd/secrets/ibm-secret-store.yaml
-- argocd/secrets/argocd-admin-user.yaml
-- argocd/secrets/openshift-gitops-cntk-tls.yaml
+# - argocd/secrets/ibm-secret-store-gitops.yaml
+# - argocd/secrets/argocd-admin-user.yaml
+# - argocd/secrets/openshift-gitops-cntk-tls.yaml
+# - argocd/secrets/ibm-secret-store-common-services.yaml
+# - argocd/secrets/ibm-secret-store-aiops.yaml
+# - argocd/secrets/ibm-entitlement-key-aiops.yaml
+# - argocd/secrets/ibm-entitlement-key-common-services.yaml
