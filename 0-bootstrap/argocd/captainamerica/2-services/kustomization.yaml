@@ -86,3 +86,4 @@ resources:
 - argocd/secrets/ibm-entitlement-key-aiops.yaml
 - argocd/secrets/ibm-entitlement-key-common-services.yaml
 - argocd/secrets/external-tls-secret-aiops.yaml
+- argocd/secrets/external-tls-secret-common-services.yaml
