@@ -21,7 +21,7 @@ spec:
       values: |
         ibm-fusion-instance:
           fusion:
-            storageclass: ibmc-vpc-block-10iops-tier         
+            storageclass: ocs-storagecluster-cephfs      
   syncPolicy:
     automated:
       prune: true

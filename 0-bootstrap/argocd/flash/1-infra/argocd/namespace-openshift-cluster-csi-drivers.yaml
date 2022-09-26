@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-open-cluster-management 
+  name: namespace-openshift-cluster-csi-drivers
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: openshift-cluster-csi-drivers
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/open-cluster-management 
+    path: namespaces/openshift-cluster-csi-drivers
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:

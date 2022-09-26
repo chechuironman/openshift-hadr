@@ -78,6 +78,30 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: ibm-spectrum-fusion-ns
     server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-scale-csi
+    server: https://kubernetes.default.svc 
+  - namespace: baas
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-protect-plus
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-scale-operator
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-fusion-ns
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-spectrum-protect-plus-ns
+    server: https://kubernetes.default.svc     
+  - namespace: ibm-spectrum-scale
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-csi
+    server: https://kubernetes.default.svc  
+  - namespace: ibm-spectrum-scale-operator
+    server: https://kubernetes.default.svc  
+  - namespace: open-cluster-management-agent
+    server: https://kubernetes.default.svc 
+  - namespace: submariner-operator
+    server: https://kubernetes.default.svc 
+  - namespace: aiops
+    server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace

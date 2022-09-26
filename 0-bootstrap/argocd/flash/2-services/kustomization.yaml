@@ -33,7 +33,7 @@ resources:
 # - argocd/instances/ibm-foundations.yaml
 
 # IBM Catalogs
-# - argocd/operators/ibm-catalogs.yaml
+- argocd/operators/ibm-catalogs.yaml
 
 # IBM fusion
 # - argocd/operators/ibm-fusion.yaml
@@ -50,7 +50,7 @@ resources:
 # # Sealed Secrets
 # - argocd/operators/sealed-secrets.yaml
 # - argocd/instances/sealed-secrets-instance.yaml
-# - argocd/operators/external-secret-operator.yaml
+- argocd/operators/external-secret-operator.yaml
 # CICD
 #- argocd/operators/grafana.yaml
 #- argocd/instances/grafana-instance.yaml
@@ -71,6 +71,20 @@ resources:
 #- argocd/operators/openshift-service-mesh.yaml
 #- argocd/instances/openshift-service-mesh-instance.yaml
 
-# RHACM
-# - argocd/operators/rhacm-hub-operator.yaml
-# - argocd/instances/rhacm-hub-instance.yaml
+
+##WAIOPS
+
+# - argocd/operators/ibm-aiops.yaml
+# - argocd/instances/ibm-aiops.yaml
+
+
+### Secrets
+
+- argocd/secrets/ibm-cluster-secret-store.yaml
+- argocd/secrets/argocd-admin-user.yaml
+- argocd/secrets/openshift-gitops-cntk-tls.yaml
+# - argocd/secrets/ibm-entitlement-key-aiops.yaml
+# - argocd/secrets/ibm-entitlement-key-common-services.yaml
+# - argocd/secrets/external-tls-secret-aiops.yaml
+# - argocd/secrets/route-tls-secret-common-services.yaml
+# - argocd/secrets/common-services-password.yaml
