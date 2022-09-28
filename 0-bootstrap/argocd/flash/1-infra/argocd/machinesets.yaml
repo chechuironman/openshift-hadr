@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "captainamerica-yvvqf"
+          infrastructureId: "flash-qz378"
           cloudProvider:
             name: "ibmcloud"
           cloud:
