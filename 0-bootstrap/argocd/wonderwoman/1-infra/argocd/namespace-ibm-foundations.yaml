@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-ibm-foundation
+  name: namespace-ibm-common-services
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
@@ -10,8 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/ibm-foundation
-    repoURL: https://github.com/chechuironman/roks-infra
+    path: namespaces/ibm-common-services
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:

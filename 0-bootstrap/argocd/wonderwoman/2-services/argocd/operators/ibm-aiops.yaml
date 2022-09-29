@@ -1,9 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ibm-aiops-instance
+  name: ibm-aiops-operator
   annotations:
-    argocd.argoproj.io/sync-wave: "310"
+    argocd.argoproj.io/sync-wave: "210"
   labels:
     gitops.tier.group: ibm-cloudpak
   finalizers:
@@ -14,20 +14,21 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: instances/ibm-aiops
+    path: operators/ibm-aiops
     repoURL: https://github.com/chechuironman/ocp-ipi-services
     targetRevision: main
     helm:
       values: |
-        cp4aiops-instance:
-          aiops_instance:
-            name_instance: ibm-cp-watson-aiops
-            name_infra: ibm-cp-watson-aiops-iinfra
-            namespace: aiops
-            size: small
-            storage_class: ocs-storagecluster-cephfs
-            storage_class_large: ocs-storagecluster-ceph-rbd
-            infra: "True"
+        ibm-cp4waiops-operator:
+          subscriptions:
+            subscription:
+              channel: v3.4
+              config:
+                resources: {}
+              installPlanApproval: Automatic
+              name: ibm-aiops-orchestrator
+              source: ibm-operator-catalog
+              sourceNamespace: openshift-marketplace
   syncPolicy:
     automated:
       prune: true

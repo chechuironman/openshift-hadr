@@ -17,38 +17,25 @@ spec:
     targetRevision: master
     helm:
       values: |
-        machinesets:
-          infrastructureId: spiderman-n6hbj
+        refarch-machinesets:
+          infrastructureId: "flash-raox2"
           cloudProvider:
-            name: vsphere 
-            managed: false
-          vsphere:
-            networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
-            datacenter: Dallas10
-            datastore: SL02SEL307608-20
-            cluster: DAL10 Compute Cluster
-            server: vcsa.vmware.chechu.com
-            folder: spiderman
-            zones:
-              - 1
+            name: "ibmcloud"
+          cloud:
+            region: eu-gb
             infraNodes:
-              nodeCount: 3
-              diskGiB: 100
-              memoryMiB:  32768
-              numCPUs: 16
-              numCoresPerSocket: 16
-            storageNodes:
-              nodeCount: 3
-              diskGiB: 1000
-              memoryMiB: 65536
-              numCPUs: 32
-              numCoresPerSocket: 32
+              nodeCount: 1
+              instanceType: "cx2-16x32"
             cloudpakNodes:
               nodeCount: 0
               diskGiB: 100
-              memoryMiB: 16000
-              numCPUs: 4
-              numCoresPerSocket: 4
+              instanceType: "cx2-32x64"
+              labels: 
+                node-role.kubernetes.io/cloud-paks: "true"
+              taints:
+                - effect: "NoSchedule"
+                  key: "node-role.kubernetes.io/cloud-paks"
+                  value: "true"
   syncPolicy:
     automated:
       prune: true
