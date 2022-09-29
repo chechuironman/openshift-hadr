@@ -29,6 +29,16 @@ spec:
               name: ibm-aiops-orchestrator
               source: ibm-operator-catalog
               sourceNamespace: openshift-marketplace
+          infra:
+            subscription:
+              channel: v3.5
+              config:
+                resources: {}
+              installPlanApproval: Automatic
+              name: ibm-infrastructure-automation-operator
+              source: ibm-operator-catalog
+              sourceNamespace: openshift-marketplace
+
   syncPolicy:
     automated:
       prune: true
