@@ -49,6 +49,7 @@ spec:
         jsonPointers:
         - /spec/source/targetRevision
         - /spec/source/repoURL
+        - /metadata/annotations/kubectl.kubernetes.io/last-applied-configuration
     argoproj.io/AppProject:
       ignoreDifferences: |
         jsonPointers:
