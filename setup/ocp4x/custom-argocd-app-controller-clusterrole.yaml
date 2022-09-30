@@ -6,6 +6,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - 'aiops.ibm.com'
+    resources:
+      - iaconfigs
+  - verbs:
+      - '*'
+    apiGroups:
       - 'external-secrets.io'
     resources:
       - secretstores
