@@ -6,12 +6,14 @@ resources:
 #- argocd/operators/ibm-assetrepository-operator.yaml
 # - argocd/operators/ibm-cp4i-operators.yaml
 #- argocd/operators/ibm-datapower-operator.yaml
-#- argocd/operators/ibm-eventstreams-operator.yaml
+- argocd/operators/ibm-eventstreams-operator.yaml
 # - argocd/operators/ibm-mq-operator.yaml
 #- argocd/operators/ibm-opsdashboard-operator.yaml
 # - argocd/operators/ibm-platform-navigator.yaml
 # - argocd/instances/ibm-platform-navigator-instance.yaml
 # - argocd/instances/ibm-mq-ephemeral.yaml
+- argocd/instances/ibm-eventstreams-instance.yaml
+
 
 # IBM Software - Cloud Pak for Business Automation
 #- argocd/operators/ibm-cp4a-operator.yaml
@@ -29,8 +31,8 @@ resources:
 # - argocd/instances/cp4data-instance.yaml
 
 # IBM Foundations / Common Services
-# - argocd/operators/ibm-foundations.yaml
-# - argocd/instances/ibm-foundations.yaml
+- argocd/operators/ibm-foundations.yaml
+- argocd/instances/ibm-foundations.yaml
 
 # IBM Catalogs
 - argocd/operators/ibm-catalogs.yaml
@@ -84,7 +86,7 @@ resources:
 - argocd/secrets/argocd-admin-user.yaml
 - argocd/secrets/openshift-gitops-cntk-tls.yaml
 # - argocd/secrets/ibm-entitlement-key-aiops.yaml
-# - argocd/secrets/ibm-entitlement-key-common-services.yaml
+- argocd/secrets/ibm-entitlement-key-common-services.yaml
 # - argocd/secrets/external-tls-secret-aiops.yaml
-# - argocd/secrets/route-tls-secret-common-services.yaml
-# - argocd/secrets/common-services-password.yaml
+- argocd/secrets/route-tls-secret-common-services.yaml
+- argocd/secrets/common-services-password.yaml
