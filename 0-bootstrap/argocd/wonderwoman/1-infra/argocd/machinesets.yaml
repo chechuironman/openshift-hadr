@@ -1,0 +1,43 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: machinesets
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    targetRevision: master
+    helm:
+      values: |
+        refarch-machinesets:
+          infrastructureId: "wonderwoman-yiw1n"
+          cloudProvider:
+            name: "ibmcloud"
+          cloud:
+            region: ca-tor
+            infraNodes:
+              nodeCount: 1
+              instanceType: "cx2-16x32"
+            cloudpakNodes:
+              nodeCount: 1
+              diskGiB: 100
+              instanceType: "cx2-16x32"
+              labels: 
+                node-role.kubernetes.io/cloud-paks: "true"
+              taints:
+                - effect: "NoSchedule"
+                  key: "node-role.kubernetes.io/cloud-paks"
+                  value: "true"
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
