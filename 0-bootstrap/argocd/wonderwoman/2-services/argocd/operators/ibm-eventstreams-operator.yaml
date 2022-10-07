@@ -12,9 +12,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-operators
+    namespace: cloudpak
     server: 'https://kubernetes.default.svc'
   project: services
+  source:
+    path: operators/ibm-eventstreams-operator
+    repoURL: https://github.com/chechuironman/ocp-ipi-services
+    targetRevision: main
   source:
     path: operators/ibm-eventstreams-operator
     helm:

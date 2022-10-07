@@ -16,11 +16,13 @@ spec:
       prune: true
       selfHeal: true
   destination:
-    namespace: tools
-    server: https://kubernetes.default.svc
+    namespace: cloudpak
+    server: 'https://kubernetes.default.svc'
   project: services
   source:
     path: instances/ibm-eventstreams-instance
+    repoURL: https://github.com/chechuironman/ocp-ipi-services
+    targetRevision: main
     helm:
       values: |
         ibm-eventstreams-instance:
