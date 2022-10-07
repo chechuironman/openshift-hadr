@@ -29,7 +29,7 @@ resources:
 - argocd/namespace-openshift-operator-lifecycle-manager.yaml
 - argocd/namespace-openshift-cluster-csi-drivers.yaml
 # - argocd/namespace-openshift-pipelines.yaml
-# - argocd/namespace-ibm-foundations.yaml
+- argocd/namespace-ibm-foundations.yaml
 # - argocd/namespace-kube-system.yaml
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
@@ -38,7 +38,7 @@ resources:
 - argocd/namespace-open-cluster-management-agent-addon.yaml
 - argocd/namespace-submariner-operator.yaml
 - argocd/namespace-external-secrets.yaml
-- argocd/namespace-instana.yaml
+# - argocd/namespace-instana.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
 # - argocd/namespace-cpd-operators.yaml
