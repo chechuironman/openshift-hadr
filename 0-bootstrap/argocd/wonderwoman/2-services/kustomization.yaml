@@ -86,6 +86,7 @@ resources:
 - argocd/secrets/argocd-admin-user.yaml
 - argocd/secrets/openshift-gitops-cntk-tls.yaml
 # - argocd/secrets/ibm-entitlement-key-aiops.yaml
+- argocd/secrets/ibm-entitlement-key-cloudpak.yaml
 - argocd/secrets/ibm-entitlement-key-common-services.yaml
 # - argocd/secrets/external-tls-secret-aiops.yaml
 - argocd/secrets/route-tls-secret-common-services.yaml
