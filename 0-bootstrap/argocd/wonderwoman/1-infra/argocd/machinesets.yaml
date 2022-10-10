@@ -33,7 +33,7 @@ spec:
               labels: 
                 node-role.kubernetes.io/cloud-paks: "true"
               taints:
-                - effect: "NoSchedule"
+                - effect: "NoExecute"
                   key: "node-role.kubernetes.io/cloud-paks"
                   value: "true"
   syncPolicy:
