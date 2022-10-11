@@ -12,7 +12,8 @@ resources:
 # - argocd/operators/ibm-platform-navigator.yaml
 # - argocd/instances/ibm-platform-navigator-instance.yaml
 # - argocd/instances/ibm-mq-ephemeral.yaml
-# - argocd/instances/ibm-eventstreams-instance.yaml
+- argocd/instances/eventstreams-prod-3-brokers.yaml
+- argocd/instances/eventstreams-minimal-prod.yaml
 
 
 # IBM Software - Cloud Pak for Business Automation
