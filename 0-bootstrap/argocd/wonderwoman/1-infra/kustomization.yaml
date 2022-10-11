@@ -40,7 +40,7 @@ resources:
 - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-instana.yaml
 # - argocd/namespace-openshift-oadp.yaml
-
+- argocd/namespace-ibm-observe.yaml
 # - argocd/namespace-cpd-operators.yaml
 # - argocd/namespace-cpd-instance.yaml
 # - argocd/namespace-cpd-instance-tether.yaml

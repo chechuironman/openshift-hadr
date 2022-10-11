@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespace-ibm-observe
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+spec:
+  destination:
+    namespace: ibm-observe
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: namespaces/ibm-observe
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
