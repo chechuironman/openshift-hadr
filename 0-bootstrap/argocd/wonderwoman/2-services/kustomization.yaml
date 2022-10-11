@@ -88,7 +88,7 @@ resources:
 # - argocd/secrets/ibm-entitlement-key-aiops.yaml
 - argocd/secrets/ibm-entitlement-key-cloudpak.yaml
 - argocd/secrets/ibm-entitlement-key-common-services.yaml
-- argocd/secrets/ibm-entitlement-ibm-observe.yaml
+- argocd/secrets/ibm-entitlement-key-ibm-observe.yaml
 # - argocd/secrets/external-tls-secret-aiops.yaml
 - argocd/secrets/route-tls-secret-common-services.yaml
 - argocd/secrets/common-services-password.yaml
