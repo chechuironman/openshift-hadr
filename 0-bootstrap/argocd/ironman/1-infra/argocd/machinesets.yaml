@@ -18,16 +18,16 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "wonderwoman-kt2zz"
+          infrastructureId: "ironman-o17eg"
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: ca-tor
+            region: br-sao
             infraNodes:
               nodeCount: 1
               instanceType: "cx2-16x32"
             cloudpakNodes:
-              nodeCount: 1
+              nodeCount: 0
               diskGiB: 100
               instanceType: "cx2-16x32"
               labels: 
