@@ -98,6 +98,12 @@ spec:
     server: https://kubernetes.default.svc  
   - namespace: open-cluster-management-agent
     server: https://kubernetes.default.svc 
+  - namespace: submariner-operator
+    server: https://kubernetes.default.svc 
+  - namespace: aiops
+    server: https://kubernetes.default.svc 
+  - namespace: ibm-observe
+    server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace

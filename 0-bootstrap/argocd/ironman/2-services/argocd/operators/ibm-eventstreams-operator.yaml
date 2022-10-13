@@ -6,17 +6,19 @@ metadata:
     argocd.argoproj.io/sync-wave: "230"
   labels:
     gitops.tier.group: ibm-cloudpak
+    gitops.tier.layer: services
+    gitops.tier.source: git
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-operators
+    namespace: cloudpak
     server: 'https://kubernetes.default.svc'
   project: services
   source:
     path: operators/ibm-eventstreams-operator
-    repoURL: https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
-    targetRevision: master
+    repoURL: https://github.com/chechuironman/ocp-ipi-services
+    targetRevision: main
     helm:
       values: |
         ibm-eventstreams-operator:
@@ -24,11 +26,11 @@ spec:
             ibmeventstreams:
               name: ibm-eventstreams
               subscription:
-                channel: v2.2-eus
+                channel: v3.0
                 installPlanApproval: Automatic
                 name: ibm-eventstreams
                 source: ibm-operator-catalog
-                sourceNamespace: openshift-marketplace          
+                sourceNamespace: openshift-marketplace
   syncPolicy:
     automated:
       prune: true

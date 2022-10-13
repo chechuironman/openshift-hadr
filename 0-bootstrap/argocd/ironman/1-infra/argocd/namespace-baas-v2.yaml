@@ -1,16 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-wonderwoman
-  namespace: openshift-gitops
+  name: namespace-baas
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: baas
     server: https://kubernetes.default.svc
-  project: default
+  project: infra
   source:
-    path: 0-bootstrap/argocd/wonderwoman
-    repoURL: https://github.com/chechuironman/openshift-hadr
+    path: namespaces/baas-v2
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
     targetRevision: master
   syncPolicy:
     automated:
