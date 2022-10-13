@@ -20,7 +20,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "ironman-5jyds"
+          infrastructureId: "ironman-o17eg"
           cloudProvider:
             name: "ibmcloud"
           cloud:
