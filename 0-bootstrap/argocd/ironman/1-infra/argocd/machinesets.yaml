@@ -18,11 +18,11 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "ironman-80k38"
+          infrastructureId: "ironman-x82ns"
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: us-south
+            region: eu-de
             infraNodes:
               nodeCount: 1
               instanceType: "cx2-16x32"
