@@ -22,7 +22,7 @@ spec:
         ibm-cp4waiops-operator:
           subscriptions:
             subscription:
-              channel: v3.5
+              channel: v3.5.1
               config:
                 resources: {}
               installPlanApproval: Automatic
@@ -31,7 +31,7 @@ spec:
               sourceNamespace: openshift-marketplace
           infra:
             subscription:
-              channel: v3.5
+              channel: v3.5.1
               config:
                 resources: {}
               installPlanApproval: Automatic
