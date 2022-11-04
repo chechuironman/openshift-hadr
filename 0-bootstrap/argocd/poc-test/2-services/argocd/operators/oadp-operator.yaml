@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name:  oadp-operator
+  annotations:
+    argocd.argoproj.io/sync-wave: "210"
+  labels:
+    gitops.tier.group: oadp
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-oadp
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: operators/oadp-operator
+    repoURL: https://github.com/chechuironman/roks-services
+    targetRevision: master
+    helm:
+      values: |
+        oadp:
+          subscriptions:
+            subscription:
+                channel: beta
+                installPlanApproval: Automatic
+                name: oadp-operator
+                source: community-operators
+                sourceNamespace: openshift-marketplace
+                startingCSV: oadp-operator.v0.3.0      
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
