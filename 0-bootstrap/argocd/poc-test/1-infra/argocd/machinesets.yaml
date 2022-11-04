@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "poc-test-waiops-td63c"
+          infrastructureId: "poc-test-waiops-tlm5n"
           cloudProvider:
             name: "ibmcloud"
           cloud:
