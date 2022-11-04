@@ -42,7 +42,7 @@ resources:
 # - argocd/operators/oadp-operator.yaml
 
 # Required for IBM MQ
-- argocd/instances/openldap.yaml
+# - argocd/instances/openldap.yaml
 # Required for IBM ACE, IBM MQ
 # - argocd/operators/cert-manager.yaml
 # - argocd/instances/cert-manager-instance.yaml
@@ -74,8 +74,8 @@ resources:
 
 ##WAIOPS
 
-- argocd/operators/ibm-aiops.yaml
-- argocd/instances/ibm-aiops.yaml
+# - argocd/operators/ibm-aiops.yaml
+# - argocd/instances/ibm-aiops.yaml
 
 
 ### Secrets
