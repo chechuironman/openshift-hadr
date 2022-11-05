@@ -29,6 +29,7 @@ spec:
               source: ibm-operator-catalog
               sourceNamespace: openshift-marketplace
           infra:
+            namespace: aiops
             subscription:
               channel: v3.5
               config:
