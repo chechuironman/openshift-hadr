@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "captainamerica-yvvqf"
+          infrastructureId: "captainamerica-cyb88"
           cloudProvider:
             name: "ibmcloud"
           cloud:
