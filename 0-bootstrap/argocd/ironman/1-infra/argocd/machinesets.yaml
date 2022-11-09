@@ -25,7 +25,7 @@ spec:
             region: eu-de
             infraNodes:
               nodeCount: 1
-              instanceType: "cx2-16x32"
+              instanceType: "cx2-4x8"
             cloudpakNodes:
               nodeCount: 0
               diskGiB: 100
