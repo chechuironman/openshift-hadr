@@ -7,7 +7,7 @@ resources:
 # - argocd/namespace-staging.yaml
 # - argocd/namespace-prod.yaml
 # - argocd/namespace-istio-system.yaml
-- argocd/namespace-openldap.yaml
+# - argocd/namespace-openldap.yaml
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
 - argocd/namespace-openshift-storage.yaml
@@ -34,9 +34,9 @@ resources:
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
 - argocd/namespace-openshift-image-registry.yaml
-- argocd/namespace-open-cluster-management-agent.yaml
-- argocd/namespace-open-cluster-management-agent-addon.yaml
-- argocd/namespace-submariner-operator.yaml
+# - argocd/namespace-open-cluster-management-agent.yaml
+# - argocd/namespace-open-cluster-management-agent-addon.yaml
+# - argocd/namespace-submariner-operator.yaml
 - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
