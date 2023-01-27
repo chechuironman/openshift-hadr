@@ -23,6 +23,8 @@ spec:
             name: "ibmcloud"
           cloud:
             region: eu-de
+            storageNodes:
+              instanceType: "cx2d-16x32"
             infraNodes:
               nodeCount: 1
               instanceType: "cx2-8x16"
