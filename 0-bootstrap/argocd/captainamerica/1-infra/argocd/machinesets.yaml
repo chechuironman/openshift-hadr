@@ -24,7 +24,7 @@ spec:
           cloud:
             region: eu-de
             storageNodes:
-              instanceType: "nx2d-8x32"
+              instanceType: "bnx2d-8x32"
             infraNodes:
               nodeCount: 1
               instanceType: "cx2-8x16"
