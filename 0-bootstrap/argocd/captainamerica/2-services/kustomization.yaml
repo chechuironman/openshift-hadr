@@ -74,8 +74,8 @@ resources:
 
 ##WAIOPS
 
-- argocd/operators/ibm-aiops.yaml
-- argocd/instances/ibm-aiops.yaml
+# - argocd/operators/ibm-aiops.yaml
+# - argocd/instances/ibm-aiops.yaml
 
 
 ### Secrets
@@ -83,8 +83,8 @@ resources:
 - argocd/secrets/ibm-cluster-secret-store.yaml
 - argocd/secrets/argocd-admin-user.yaml
 - argocd/secrets/openshift-gitops-cntk-tls.yaml
-- argocd/secrets/ibm-entitlement-key-aiops.yaml
-- argocd/secrets/ibm-entitlement-key-common-services.yaml
-- argocd/secrets/external-tls-secret-aiops.yaml
-- argocd/secrets/route-tls-secret-common-services.yaml
-- argocd/secrets/common-services-password.yaml
+# - argocd/secrets/ibm-entitlement-key-aiops.yaml
+# - argocd/secrets/ibm-entitlement-key-common-services.yaml
+# - argocd/secrets/external-tls-secret-aiops.yaml
+# - argocd/secrets/route-tls-secret-common-services.yaml
+# - argocd/secrets/common-services-password.yaml
