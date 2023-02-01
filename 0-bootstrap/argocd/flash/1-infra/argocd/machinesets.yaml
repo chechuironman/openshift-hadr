@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "flash-rrehx"
+          infrastructureId: "flash-qg3oj"
           cloudProvider:
             name: "ibmcloud"
           cloud:
