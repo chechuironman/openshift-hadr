@@ -42,7 +42,7 @@ resources:
 # - argocd/namespace-openshift-oadp.yaml
 - argocd/namespace-ibm-observe.yaml
 # - argocd/namespace-cpd-operators.yaml
-# - argocd/namespace-cpd-instance.yaml
+- argocd/namespace-cpd-instance.yaml
 # - argocd/namespace-cpd-instance-tether.yaml
 # - argocd/odf-ibm.yaml
 # - argocd/refarch-infraconfig.yaml
