@@ -22,11 +22,11 @@ spec:
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: eu-de
+            region: us-east
             infraNodes:
               nodeCount: 1
             cloudpakNodes:
-              nodeCount: 0
+              nodeCount: 1
               diskGiB: 100
               instanceType: "cx2-16x32"
               labels: 
