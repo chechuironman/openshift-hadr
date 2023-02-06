@@ -9,6 +9,8 @@ spec:
   - https://github.com/chechuironman/ocp-IPI-services.git
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
   destinations:
+  - namespace:  cp4ba
+    server: https://kubernetes.default.svc
   - namespace: external-secrets
     server: https://kubernetes.default.svc
   - namespace: cloudpak
