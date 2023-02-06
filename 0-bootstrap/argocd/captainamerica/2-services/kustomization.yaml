@@ -79,7 +79,7 @@ resources:
 
 ##CP4BA
 
-- argocd/operators/ibm-cp4ba-operator.yaml
+# - argocd/operators/ibm-cp4ba-operator.yaml
 # - argocd/instances/ibm-aiops.yaml
 
 ### Secrets
