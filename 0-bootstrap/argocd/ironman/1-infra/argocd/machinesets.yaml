@@ -26,7 +26,7 @@ spec:
             infraNodes:
               nodeCount: 1
             cloudpakNodes:
-              nodeCount: 1
+              nodeCount: 0
               diskGiB: 100
               instanceType: "cx2-32x64"
               labels: 
