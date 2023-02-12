@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nmstate-operator
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "110"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: kubernetes-nmstate-operator
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    path: odf-operator
+    targetRevision: master
+    helm:
+      values: |
+        nmstate-operator:
+          channel: stable-4.11
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
