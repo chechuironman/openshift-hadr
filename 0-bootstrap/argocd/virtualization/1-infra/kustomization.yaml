@@ -1,0 +1,11 @@
+resources:
+- argocd/consolenotification.yaml
+- argocd/namespace-openshift-storage.yaml
+- argocd/namespace-openshift-gitops.yaml
+
+
+- argocd/storage.yaml
+
+
+
+
