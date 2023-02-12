@@ -1,5 +1,6 @@
 resources:
 - argocd/consolenotification.yaml
+- argocd/nmstate.yaml
 - argocd/namespace-openshift-storage.yaml
 - argocd/namespace-openshift-gitops.yaml
 - argocd/namespace-kubernetes-nmstate-operator.yaml

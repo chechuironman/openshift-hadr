@@ -20,7 +20,7 @@ spec:
     helm:
       values: |
         nmstate-operator:
-          channel: stable-4.11
+          channel: stable
   syncPolicy:
     automated:
       prune: true
