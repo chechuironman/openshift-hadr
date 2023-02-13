@@ -15,7 +15,7 @@ spec:
   project: infra
   source:
     repoURL: https://github.com/chechuironman/ocp-ipi-infra
-    path: odf-operator
+    path: nmstate-operator
     targetRevision: master
     helm:
       values: |
