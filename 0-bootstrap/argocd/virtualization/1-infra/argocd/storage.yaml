@@ -22,7 +22,7 @@ spec:
         odf-operator:
           channel: stable-4.11
           sizeGiB: 512
-          storageClass: local-sc
+          storageClass: localvolume-fs
           csv: odf-operator.v4.11.4
           otherNodes:
             taints: 
