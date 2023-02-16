@@ -19,7 +19,7 @@ spec:
     targetRevision: master
     helm:
       values: |
-        nmstate-operator:
+        nmsate-operator:
           channel: stable
   syncPolicy:
     automated:
