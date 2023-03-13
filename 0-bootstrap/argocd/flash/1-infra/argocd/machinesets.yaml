@@ -18,11 +18,11 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "flash-qg3oj"
+          infrastructureId: "flash-6y71n"
           cloudProvider:
             name: "ibmcloud"
           cloud:
-            region: us-south
+            region: eu-gb
             infraNodes:
               nodeCount: 1
               instanceType: "cx2-16x32"
