@@ -25,16 +25,11 @@ spec:
             region: us-east
             infraNodes:
               nodeCount: 1
+              instanceType: "cx2-32x64"
             cloudpakNodes:
               nodeCount: 1
               diskGiB: 100
               instanceType: "cx2-32x64"
-              labels: 
-                node-role.kubernetes.io/cloud-paks: "true"
-              taints:
-                - effect: "NoSchedule"
-                  key: "node-role.kubernetes.io/cloud-paks"
-                  value: "true"
   syncPolicy:
     automated:
       prune: true
