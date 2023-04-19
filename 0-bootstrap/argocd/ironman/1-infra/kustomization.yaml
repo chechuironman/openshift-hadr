@@ -1,7 +1,7 @@
 resources:
 # - argocd/consolelink.yaml
 - argocd/consolenotification.yaml
-- argocd/namespace-cloudpak.yaml
+# - argocd/namespace-cloudpak.yaml
 # - argocd/namespace-ci.yaml
 # - argocd/namespace-dev.yaml
 # - argocd/namespace-staging.yaml
@@ -34,10 +34,10 @@ resources:
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
 - argocd/namespace-openshift-image-registry.yaml
-- argocd/namespace-open-cluster-management-agent.yaml
-- argocd/namespace-open-cluster-management-agent-addon.yaml
-- argocd/namespace-submariner-operator.yaml
-- argocd/namespace-external-secrets.yaml
+# - argocd/namespace-open-cluster-management-agent.yaml
+# - argocd/namespace-open-cluster-management-agent-addon.yaml
+# - argocd/namespace-submariner-operator.yaml
+# - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-instana.yaml
 # - argocd/namespace-openshift-oadp.yaml
 - argocd/namespace-ibm-observe.yaml
