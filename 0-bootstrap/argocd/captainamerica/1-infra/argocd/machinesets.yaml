@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "captainamerica-jb86p"
+          infrastructureId: "captainamerica-vhc8q"
           cloudProvider:
             name: "ibmcloud"
           cloud:
@@ -26,10 +26,10 @@ spec:
             storageNodes:
               instanceType: "bx2d-8x32"
             infraNodes:
-              nodeCount: 1
+              nodeCount: 0
               instanceType: "cx2-8x16"
             cloudpakNodes:
-              nodeCount: 1
+              nodeCount: 0
               diskGiB: 100
               instanceType: "cx2-32x64"
               labels: 
