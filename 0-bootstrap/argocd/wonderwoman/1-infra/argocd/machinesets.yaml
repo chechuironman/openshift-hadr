@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "wonderwoman-4qv1m"
+          infrastructureId: ""
           cloudProvider:
             name: "ibmcloud"
           cloud:
