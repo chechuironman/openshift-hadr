@@ -25,7 +25,7 @@ spec:
             region: ca-tor
             infraNodes:
               nodeCount: 1
-              instanceType: "cx2-16x32"
+              instanceType: "cx2-32x64"
             cloudpakNodes:
               nodeCount: 1
               diskGiB: 100
