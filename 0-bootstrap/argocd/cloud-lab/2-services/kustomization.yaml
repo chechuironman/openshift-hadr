@@ -33,17 +33,17 @@ resources:
 # - argocd/instances/ibm-foundations.yaml
 
 # IBM Catalogs
-- argocd/operators/ibm-catalogs.yaml
+# - argocd/operators/ibm-catalogs.yaml
 
 # - argocd/operators/oadp-operator.yaml
 
 # Required for IBM MQ
 # - argocd/instances/openldap.yaml
-- argocd/instances/mq-instance-dr.yaml
+# - argocd/instances/mq-instance-dr.yaml
 # Required for IBM ACE, IBM MQ
 # - argocd/operators/cert-manager.yaml
 # - argocd/instances/cert-manager-instance.yaml
-- argocd/operators/external-secret-operator.yaml
+# - argocd/operators/external-secret-operator.yaml
 # # Sealed Secrets
 # - argocd/operators/sealed-secrets.yaml
 # - argocd/instances/sealed-secrets-instance.yaml
@@ -71,11 +71,11 @@ resources:
 
 ### Secrets
 
-- argocd/secrets/ibm-cluster-secret-store.yaml
-- argocd/secrets/argocd-admin-user.yaml
-- argocd/secrets/openshift-gitops-cntk-tls.yaml
+# - argocd/secrets/ibm-cluster-secret-store.yaml
+# - argocd/secrets/argocd-admin-user.yaml
+# - argocd/secrets/openshift-gitops-cntk-tls.yaml
 # - argocd/secrets/ibm-entitlement-key-aiops.yaml
 # - argocd/secrets/ibm-entitlement-key-common-services.yaml
 # - argocd/secrets/external-tls-secret-aiops.yaml
-- argocd/secrets/route-tls-secret-common-services.yaml
-- argocd/secrets/common-services-password.yaml
+# - argocd/secrets/route-tls-secret-common-services.yaml
+# - argocd/secrets/common-services-password.yaml

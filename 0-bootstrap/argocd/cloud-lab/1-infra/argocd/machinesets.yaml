@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "cloud-lab-h828n"
+          infrastructureId: "cloud-lab-fd2cv"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -27,7 +27,7 @@ spec:
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
-            datastore: SL02SL307608-25
+            datastore: SL02SL307608-49
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
             folder: cloud-lab
@@ -37,8 +37,8 @@ spec:
               nodeCount: 3
               diskGiB: 100
               memoryMiB:  32768
-              numCPUs: 16
-              numCoresPerSocket: 16
+              numCPUs: 2
+              numCoresPerSocket: 4
             storageNodes:
               nodeCount: 3
               diskGiB: 1000
@@ -48,10 +48,10 @@ spec:
               labels: scale=true
             cloudpakNodes:
               nodeCount: 3
-              diskGiB: 100
-              memoryMiB: 32000
-              numCPUs: 16
-              numCoresPerSocket: 16
+              diskGiB: 400
+              memoryMiB: 65536
+              numCPUs: 32
+              numCoresPerSocket: 32
               labels: node-role.kubernetes.io/cloud-paks=true
   syncPolicy:
     automated:

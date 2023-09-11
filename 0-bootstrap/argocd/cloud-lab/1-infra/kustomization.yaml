@@ -1,7 +1,7 @@
 resources:
 # - argocd/consolelink.yaml
 - argocd/consolenotification.yaml
-- argocd/namespace-cloudpak.yaml
+# - argocd/namespace-cloudpak.yaml
 # - argocd/namespace-ci.yaml
 # - argocd/namespace-dev.yaml
 # - argocd/namespace-staging.yaml
@@ -11,9 +11,9 @@ resources:
 # - argocd/namespace-sealed-secrets.yaml
 # - argocd/namespace-tools.yaml
 - argocd/namespace-openshift-storage.yaml
-- argocd/namespace-openshift-monitoring.yaml
+# - argocd/namespace-openshift-monitoring.yaml
 - argocd/namespace-openshift-gitops.yaml
-- argocd/namespace-openshift-ingress.yaml
+# - argocd/namespace-openshift-ingress.yaml
 # - argocd/namespace-ibm-spectrum-fusion-ns.yaml
 # - argocd/namespace-baas.yaml
 # - argocd/namespace-ibm-spectrum-protect-plus-ns.yaml
@@ -34,9 +34,9 @@ resources:
 # - argocd/namespace-calico-system.yaml
 # - argocd/namespace-openshift-cluster-storage-operator.yaml
 # - argocd/namespace-openshift-image-registry.yaml
-- argocd/namespace-open-cluster-management-agent.yaml
-- argocd/namespace-open-cluster-management-agent-addon.yaml
-- argocd/namespace-external-secrets.yaml
+# - argocd/namespace-open-cluster-management-agent.yaml
+# - argocd/namespace-open-cluster-management-agent-addon.yaml
+# - argocd/namespace-external-secrets.yaml
 # - argocd/namespace-openshift-oadp.yaml
 
 # - argocd/namespace-cpd-operators.yaml
