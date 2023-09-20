@@ -24,6 +24,11 @@ spec:
           sizeGiB: 512
           storageClass: thin
           csv: odf-operator.v4.12.7-rhodf
+          otherNodes:
+            taints: 
+            - effect: NoSchedule
+              key: role
+              value: "jmeter"
   syncPolicy:
     automated:
       prune: true
