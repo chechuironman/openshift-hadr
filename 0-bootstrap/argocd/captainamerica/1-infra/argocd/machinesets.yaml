@@ -29,7 +29,7 @@ spec:
               nodeCount: 0
               instanceType: "cx2-8x16"
             cloudpakNodes:
-              nodeCount: 4
+              nodeCount: 1
               diskGiB: 100
               instanceType: "cx2-32x64"
               labels: 
