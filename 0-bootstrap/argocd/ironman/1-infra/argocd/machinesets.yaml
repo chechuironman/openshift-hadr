@@ -27,7 +27,7 @@ spec:
               nodeCount: 1
               instanceType: "cx2-32x64"
             cloudpakNodes:
-              nodeCount: 1
+              nodeCount: 2
               diskGiB: 100
               instanceType: "cx2-32x64"
   syncPolicy:
