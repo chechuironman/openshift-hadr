@@ -27,7 +27,7 @@ spec:
           vsphere:
             networkName: vxw-dvs-1195-virtualwire-259-sid-6000-172.20.0.0_LS
             datacenter: Dallas10
-            datastore: SL02SL307608-49
+            datastore: SL02SL307608-20
             cluster: DAL10 Compute Cluster
             server: vcsa.vmware.chechu.com
             folder: cloud-lab
