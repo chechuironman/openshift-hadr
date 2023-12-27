@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-cloud-lab
+  name: bootstrap-cloud-lab-dal
   namespace: openshift-gitops
 spec:
   destination:
