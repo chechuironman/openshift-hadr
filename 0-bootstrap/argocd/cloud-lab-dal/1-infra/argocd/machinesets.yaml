@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "cloud-lab-dal-5qh7q"
+          infrastructureId: "cloud-lab-dal-2hsr2"
           cloudProvider:
             name: vsphere 
             managed: false
