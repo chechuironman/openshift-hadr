@@ -37,7 +37,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/venom/3-apps
+    path: 0-bootstrap/argocd/cloud-lab-fra/3-apps
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: kustomize
   syncPolicy:
