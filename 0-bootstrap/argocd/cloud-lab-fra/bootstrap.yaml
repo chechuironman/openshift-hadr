@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/argocd/cloud-lab-dal
+    path: 0-bootstrap/argocd/cloud-lab-fra
     repoURL: https://github.com/chechuironman/openshift-hadr
     targetRevision: master
   syncPolicy:

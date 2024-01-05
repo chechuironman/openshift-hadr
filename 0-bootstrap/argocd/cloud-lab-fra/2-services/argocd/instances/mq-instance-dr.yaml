@@ -1,0 +1,35 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mq-instance-dr
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: cloudpak
+    server: https://kubernetes.default.svc
+  project: services
+  source:
+    path: instances/mq-instance-dr
+    repoURL: https://github.com/chechuironman/ocp-IPI-services.git
+    targetRevision: main
+    helm:
+      values: |
+        mq-instance-dr:
+          mq_instance_dr:
+            name: testdr
+            namespace: cloudpak
+            preferredCluster: batman
+            matchLabel: externalmqwithoutcustomroute
+            failoverCluster: venom
+            action: Relocate
+            git_branch: main
+            git_path: github.com/chechuironman/helm-repo
+            git_folder: test-mq
+            odr_policy: odr-policy-1m
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
