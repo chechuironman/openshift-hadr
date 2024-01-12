@@ -26,7 +26,7 @@ spec:
             region: vmwarefix
           vsphere:
             networkName: vxw-dvs-39647-virtualwire-259-sid-6000-172.20.0.0_LS
-            datacenter: Frankfurt
+            datacenter: Frankfurt02
             datastore: SL02SL307608-50
             cluster: FRA02 Compute Cluster
             server: vcsa.vmware.chechu.com
