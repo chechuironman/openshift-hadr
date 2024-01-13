@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "cloud-lab-fra-86686"
+          infrastructureId: "cloud-lab-fra-62n9r"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -36,21 +36,21 @@ spec:
             infraNodes:
               nodeCount: 3
               diskGiB: 100
-              memoryMiB:  32768
-              numCPUs: 2
+              memoryMiB:  8128
+              numCPUs: 4
               numCoresPerSocket: 4
             storageNodes:
               nodeCount: 3
-              diskGiB: 1000
+              diskGiB: 2000
               memoryMiB: 65536
               numCPUs: 32
               numCoresPerSocket: 32
               labels: scale=true
             cloudpakNodes:
-              nodeCount: 15
+              nodeCount: 8
               diskGiB: 400
-              memoryMiB: 65536
-              numCPUs: 32
+              memoryMiB: 131072
+              numCPUs: 64
               numCoresPerSocket: 32
               labels: node-role.kubernetes.io/cloud-paks=true
   syncPolicy:
