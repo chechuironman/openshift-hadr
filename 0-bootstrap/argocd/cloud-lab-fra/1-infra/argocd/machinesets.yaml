@@ -1,0 +1,60 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: tools
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: machinesets
+    repoURL: https://github.com/chechuironman/ocp-ipi-infra
+    targetRevision: master
+    helm:
+      values: |
+        refarch-machinesets:
+          infrastructureId: "cloud-lab-fra-62n9r"
+          cloudProvider:
+            name: vsphere 
+            managed: false
+          cloud:
+            region: vmwarefix
+          vsphere:
+            networkName: vxw-dvs-39647-virtualwire-259-sid-6000-172.20.0.0_LS
+            datacenter: Frankfurt02
+            datastore: SL02SL307608-50
+            cluster: FRA02 Compute Cluster
+            server: vcsa.vmware.chechu.com
+            folder: /Frankfurt02/vm/cloud-lab-fra
+            zones:
+              - 1
+            infraNodes:
+              nodeCount: 3
+              diskGiB: 100
+              memoryMiB:  8128
+              numCPUs: 4
+              numCoresPerSocket: 4
+            storageNodes:
+              nodeCount: 3
+              diskGiB: 2000
+              memoryMiB: 65536
+              numCPUs: 32
+              numCoresPerSocket: 32
+              labels: scale=true
+            cloudpakNodes:
+              nodeCount: 8
+              diskGiB: 400
+              memoryMiB: 131072
+              numCPUs: 64
+              numCoresPerSocket: 32
+              labels: node-role.kubernetes.io/cloud-paks=true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
