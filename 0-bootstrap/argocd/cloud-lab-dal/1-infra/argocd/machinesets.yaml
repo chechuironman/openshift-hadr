@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "cloud-lab-dal-6z2r4"
+          infrastructureId: "cloud-lab-dal-s68s6"
           cloudProvider:
             name: vsphere 
             managed: false
@@ -47,7 +47,7 @@ spec:
               numCoresPerSocket: 32
               labels: scale=true
             cloudpakNodes:
-              nodeCount: 15
+              nodeCount: 7
               diskGiB: 400
               memoryMiB: 65536
               numCPUs: 32
