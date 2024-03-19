@@ -17,7 +17,7 @@ spec:
     targetRevision: master
     helm:
       values: |
-        refarch-machinesets:
+        machinesets-v3:
           infrastructureId: "cloud-lab-fra-nbhlj"
           cloudProvider:
             name: vsphere 
