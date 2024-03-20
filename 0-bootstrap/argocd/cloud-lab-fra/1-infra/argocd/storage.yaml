@@ -20,10 +20,10 @@ spec:
     helm:
       values: |
         odf-operator:
-          channel: stable-4.12
+          channel: stable-4.14
           sizeGiB: 1512
           storageClass: thin
-          csv: odf-operator.v4.12.7-rhodf
+          csv: odf-operator.v4.14.5-rhodf
           otherNodes:
             taints: 
             - effect: NoSchedule
