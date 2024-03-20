@@ -22,7 +22,7 @@ spec:
         odf-operator:
           channel: stable-4.14
           sizeGiB: 1512
-          storageClass:thin-csi
+          storageClass: thin-csi
           csv: odf-operator.v4.14.5-rhodf
           otherNodes:
             taints: 
